@@ -429,7 +429,7 @@ AC 15, HP 24, ATK 2 pincer +4
 AL N, LV 5
 Crush. DC 15 STR or target takes 
 1d8 damage. 
-203
+
 CROCODILE
 Fat, scaly reptiles with stumpy 
 legs and long, thrashing tails.
@@ -477,7 +477,7 @@ near) +2 (1d6), MV near (swim), S
 +2, D +1, C +1, I -2, W +0, Ch -2, AL
 C, LV 2
 Sunblind. Blinded in bright light.
-204
+
 DEMONS
 Demons are Chaos incarnate, 
 born from the violent roil and 
@@ -533,7 +533,7 @@ or 1 gas, MV near, S +2, D +0, C +2,
 I -2, W -1, Ch -3, AL C, LV 2
 Gas. All in near DC 12 CON or 
 blinded for 1d4 rounds. 
-205
+
 DEMON, MARILITH
 Hissing, armored women with 
 six limbs and the lower bodies of 
@@ -563,7 +563,7 @@ Screech. All enemies in double
 near DC 12 WIS or DISADV on 
 checks and attacks for 1d4 
 rounds.
-206
+
 DEVILS
 Devils are the vile reflection of 
 angels, forming the unholy hosts 
@@ -608,7 +608,7 @@ I +1, W +1, Ch +1, AL C, LV 3
 Barb. Each spine sticks, dealing 
 1d4 damage each round. DC 12 
 STR check on turn to remove.
-207
+
 DEVIL, CUBI
 Entrancing humanoids with bat 
 wings and devilish charm.
@@ -667,7 +667,7 @@ a sworn soul. ADV on related
 Charisma checks.
 Poison. DC 12 CON or fitful sleep 
 for 1d4 hours.
-208
+
 DINOSAURS
 PTERODACTYL
 Long-beaked beasts with wide, 
@@ -718,7 +718,7 @@ MV double near, S -1, D +3, C +1, I
 -2, W +1, Ch -3, AL N, LV 2
 Clever. +1d4 damage when 
 attacking with surprise.
-209
+
 DJINNI
 Azure-blue, jovial humanoids 
 made of air and roiling wind. 
@@ -748,7 +748,7 @@ similarly-sized humanoid.
 Telepathy. Can secretly hear 
 the surface thoughts of all 
 humanoids within near.
-210
+
 DRAGONS
 Dragons are winged, formidable 
 reptiles who carry the ancient 
@@ -797,7 +797,7 @@ Fireblood. Fire immune.
 Fire Breath. Fills a double near-sized cube extending from 
 dragon. DC 15 DEX or 6d10 
 damage.
-211
+
 DRAGON, FOREST
 The smell of wet loam follows 
 this dragon. Its jade scales 
@@ -857,7 +857,7 @@ Smog Breath. Fills a near-sized
 cube extending from dragon. 
 DC 15 CON or 2d10 damage and 
 blinded for 1 round. 
-212
+
 DROW
 Lithe, subterranean elves with 
 ebon skin, white hair, and red 
@@ -911,7 +911,7 @@ I +2, W +2, Ch +0, AL C, LV 6
 Poison. DC 15 CON or paralyzed 
 1d4 rounds.
 Sunblind. Blinded in bright light.
-213
+
 DRUID
 A wizard of the wilds holding 
 a knotted staff and wearing a 
@@ -964,7 +964,7 @@ Invisibility. 1/day, turn invisible
 for 3 rounds. Ends if duergar 
 attacks.
 Sunblind. Blinded in bright light. 
-214
+
 DUNG BEETLE, GIANT
 A trundling, barrel-sized beetle 
 with a T-shaped horn.
@@ -989,7 +989,7 @@ length. Touching it deals 4d8
 damage. Lasts 2d4 rounds.
 Wish. Cast wish once a week for 
 a mortal, no spellcasting check. 
-215
+
 ELEMENTALS
 ELEMENTAL, AIR
 A howling tornado of wind.
@@ -1045,7 +1045,7 @@ and their slam deals 2 dice of
 damage. Greater elementals are 
 LV 9 and their slam deals 3 dice 
 of damage. 
-216
+
 ELEPHANT
 Mighty mammals with tough 
 hide, flappy ears, and a trunk.
@@ -1101,7 +1101,7 @@ MV near (fly), S +3, D +1, C +2, I +0,
 W +1, Ch -1, AL C, LV 4
 Impervious. Only damaged by 
 magical sources.
-217
+
 GELATINOUS CUBE
 A translucent cube of slime that 
 silently mows through tunnels.
@@ -1161,7 +1161,7 @@ target, close range. Contested
 CHA check. If ghost wins, it 
 inhabits target's body and 
 controls it for 2d4 rounds.
-218
+
 GIANTS
 Giants once ruled the earth long 
 ago, warring with dragons for 
@@ -1202,7 +1202,7 @@ greatsword +9 (2d12), MV double
 near, S +6, D +0, C +4, I +1, W +2, 
 Ch +1, AL C, LV 9
 Fireblood. Fire immune.
-219
+
 GIANT, FROST
 Blue-skinned warriors with 
 broad shoulders and braided 
@@ -1259,7 +1259,7 @@ greatclub +6 (2d8) or 1 boulder
 (far) +6 (2d10), MV double near, S
 +4, D +0, C +3, I -2, W -2, Ch -2, AL
 C, LV 7
-220
+
 GIBBERING MOUTHER
 Crawling masses of slime with 
 dozens of screeching, lipless 
@@ -1304,7 +1304,7 @@ ATK 1 pick +3 (1d6) or 1 dart (near)
 I +1, W +1, Ch +1, AL L, LV 3
 Stone Meld. 2/day, underground 
 only. Turn invisible for 3 rounds.
-221
+
 GOBLINS
 Goblins are the smallest 
 and most numerous of the 
@@ -1350,7 +1350,7 @@ Stink Bomb (WIS Spell). DC
 12. One target within far 2d4 
 damage and DC 12 CON or 
 DISADV on next check/attack. 
-222
+
 GOLEMS
 Creatures constructed from 
 various materials and imbued 
@@ -1406,7 +1406,7 @@ from fire, cold, electricity, or
 non-magical sources.
 Slow. Far range, one target. DC 
 15 CON or speed halved 1d4 rds.
-223
+
 GORGON
 A snorting bull made entirely of 
 iron plating. A cloud of green fog 
@@ -1448,7 +1448,7 @@ terrain or rocks.
 Grab. Target is immobilized. DC 
 15 Strength check on turn to 
 break free.
-224
+
 GRIFFON
 Winged hunters with the head 
 of an eagle and body of a lion. 
@@ -1479,7 +1479,7 @@ ATK 1 spear (close/near) +1 (1d6)
 or 1 longsword +1 (1d8), MV near, 
 S +1, D +0, C +0, I +0, W +1, Ch +0, 
 AL L, LV 1
-225
+
 HAGS
 Sinister crones who rose out of 
 the black bogs of the Unseelie 
@@ -1526,7 +1526,7 @@ to look like any other humanoid.
 Terrify. A creature who first 
 sees her true form DC 15 CHA or 
 DISADV on attacks 1d4 rounds. 
-226
+
 HARPY
 Horrific, winged women with 
 vulture-like lower bodies. They 
@@ -1567,7 +1567,7 @@ MV near (swim), S +4, D +0, C +2,
 I -3, W +0, Ch -3, AL N, LV 5
 Stumpy. ADV on STR checks to 
 grab or drag other creatures.
-227
+
 HOBGOBLIN
 A sturdy, tall goblin with russet 
 skin. Militant and strategic.
@@ -1615,7 +1615,7 @@ stalker's magical servitude.
 Invisible. Naturally invisible.
 Tracking. Can always sense the 
 direction of its chosen quarry.
-228
+
 JELLYFISH
 Hand-sized, purple sea jellies 
 with stinging tentacles.
@@ -1663,7 +1663,7 @@ Spider Swarm (CHA Spell).
 DC 12. A spider swarm appears 
 within near. Stays 1d4 rounds. 
 Follows sorcerer's commands.
-229
+
 KRAKEN
 Primordial, tentacled leviathans 
 the size of war galleons. They 
@@ -1704,10 +1704,10 @@ W -1, Ch -3, AL N, LV 2
 Attach. Attach to target; bite 
 auto-hits next round. DC 12 STR 
 on turn to tear off.
-230
+
 LEPRECHAUN
 Impish fey who favor green garb 
-and love fooling "tall folk" with 
+and love fooling \"tall folk\" with 
 promises of gold.
 AC 13, HP 19, ATK 1 spell +4, MV
 near, S +1, D +3, C +1, I +2, W +1, 
@@ -1758,7 +1758,7 @@ near DC 15 CON or go to 0 HP.
 Wither (INT Spell). DC 14. 4d8 
 damage to enemies within a 
 near-sized cube centered on lich.
-231
+
 LION
 Tawny great cats that hunt in 
 open plains. Males have manes.
@@ -1802,7 +1802,7 @@ Thick Fur. Cold immune.
 Charge. Move up to double near 
 in straight line and make 1 tusks 
 attack. If hit, x3 damage.
-232
+
 MANTA RAY, GIANT
 Swooping manta rays as large 
 as longboats. Gentle and 
@@ -1858,7 +1858,7 @@ stick), MV near, S +2, D +0, C +1, I
 Stick. DC 15 STR or adhere to 
 target; auto-hit with bite. DC 15 
 STR on turn to remove.
-233
+
 MINOTAUR
 Ferocious bull-men with hooves 
 and curved horns. They live in 
@@ -1877,7 +1877,8 @@ with weighty, flat antlers.
 AC 11, HP 19, ATK 2 antler +3 (1d6), 
 MV double near, S +3, D +0, C +1, I
 -2, W +0, Ch -2, AL N, LV 4
-234
+
+MORDANTICUS THE FLAYED
 A skinless mummy-lich wearing a crown set with nine bright 
 gems. Once the head of the ancient, wizardly order of Gehemna, 
 Mordanticus now lives in secret within the sanctum of Gehemna's 
@@ -1902,12 +1903,10 @@ Bind (INT Spell). DC 12. One humanoid in far paralyzed 1d4 rounds.
 Blast (INT Spell). DC 14. One creature in near takes 5d8 damage.
 Phase (INT Spell). DC 13. Self. Teleport up to one mile.
 True Name (INT Spell). DC 15. Near. Learn the True Name of target.
-MORDANTICUS THE FLAYED
- “Long have I held the weighty secrets of Gehemna,
- an age-old litany inscribed upon my weary soul." 
+ \"Long have I held the weighty secrets of Gehemna,
+ an age-old litany inscribed upon my weary soul.\" 
  -Mordanticus the Flayed
 
-236
 MUMMY
 A desiccated, linen-wrapped 
 zombie. It was created with 
@@ -1937,7 +1936,7 @@ MV near, S +2, D -1, C +2, I +0, W
 Sunblind. Blinded in bright light. 
 Telepathic. Speak mentally with 
 creatures within double near.
-237
+
 NAGA
 Magic-wielding cobras towering 
 ten feet high. Once a dominant 
@@ -1977,7 +1976,8 @@ D +3, C +2, I -1, W +1, Ch -2, AL C,
 LV 6
 Impervious. Nightmare and its 
 rider immune to fire.
-238
+
+OBE-IXX OF AZARUMME
 A pale, angular woman in translucent plate mail fashioned from 
 giant scorpion chitin. Obe-Ixx, daughter of Azarumme, rose up from 
 the prehistoric barbarian tribes of Tal-Yool to conquer all in her 
@@ -2004,10 +2004,9 @@ cycle or loses 2d8 HP per day that cannot heal until sleeping
 in sarcophagus. Takes 3d8 damage each round while in direct 
 sunlight. Cannot be killed unless pierced through heart while at 0 
 HP with a wooden stake carved from a tree from the Tal-Yool jungle.
-OBE-IXX OF AZARUMME
-“By this blade, the empire of Azarumme shall rise again!" 
+\"By this blade, the empire of Azarumme shall rise again!\" 
  -Obe-Ixx of Azarumme
-239
+
 OCHRE JELLY
 An orange puddle of quivering 
 slime.
@@ -2054,7 +2053,7 @@ extending from oni 3d6 damage.
 Mist (CHA Spell). DC 13. Self. 
 Turn into mist that can fly 
 double near. Lasts 2d4 rounds.
-240
+
 ORC
 A tusked, tall humanoid with 
 gray skin and pointed ears.
@@ -2084,7 +2083,7 @@ disease), MV near, S +4, D -1, C
 Disease. DC 15 CON or infected. 
 DC 15 CON each day or lose 1d6 
 HP (can't heal). Ends on success.
-241
+
 OUTSIDERS
 Alien horrors from the frozen, 
 outer reaches of the cosmos or 
@@ -2138,7 +2137,7 @@ Impervious. Immune to cold.
 Ice Aura. Enemies within near of 
 rime walker DC 12 CON at start 
 of turn or lose action.
-242
+
 OWLBEAR
 Cantankerous bears with owl 
 eyes, beaks, and feathers.
@@ -2165,7 +2164,7 @@ AC 12, HP 15, ATK 2 hooves +3
 (1d6), MV double near (fly), S +3, 
 D +2, C +2, I -3, W +1, Ch +0, AL N, 
 LV 3
-243
+
 PHOENIX
 Huge, soaring eagles made of 
 searing flames. Intelligent and 
@@ -2223,7 +2222,7 @@ Rebuke (WIS Spell). DC 13.
 Focus. Chaotic creatures cannot 
 attack priest or come within 
 near range for duration.
-244
+
 PURPLE WORM
 A massive worm as tall as a 
 castle keep. Has a rotating maw 
@@ -2258,7 +2257,7 @@ appearance of any humanoid.
 Weakness. A crossbow bolt 
 under the effects of the holy 
 weapon spell kills the rakshasa.
-245
+
 RAT
 Rangy, plague-carrying rodents 
 that infest underground places.
@@ -2299,7 +2298,8 @@ Disease. DC 9 CON or 1d4 CON
 damage (can't heal while ill). 
 Repeat check once per day; ends 
 on success. Die at 0 CON.
-246
+
+RATHGAMNON
 A pearl-white lion with feathered wings that stands twenty feet 
 tall. Rathgamnon is Madeera the Covenant's mightiest servant; his 
 blank eyes see far into the depths of time and space. He spends all 
@@ -2325,11 +2325,10 @@ advantage or disadvantage on all attack rolls and checks.
 Time Stop (WIS Spell). DC 15. Self. Time freezes for everyone except 
 Rathgamnon for 1d4 rounds. Everything that occurs during the time 
 freeze happens simultaneously when the spell ends.
-RATHGAMNON
- “The stars told me of your arrival here many eons ago, 
- long before the first of your people walked the earth."
+ \"The stars told me of your arrival here many eons ago, 
+ long before the first of your people walked the earth.\"
  -Rathgamnon
-247
+
 REAVER
 A knight in blackened armor 
 riddled with cruel barbs.
@@ -2359,7 +2358,7 @@ damage per round. Remorhaz
 regurgitates all swallowed if 
 dealt at least 20 damage in one 
 round to the inside of its gullet.
-248
+
 RHINOCEROS
 Gray-skinned bulls with single 
 nose horns. Dwell in grasslands.
@@ -2397,7 +2396,7 @@ pull a grabbed target a near
 distance.
 Tendrils. Four total. AC 18 each. 
 4+ damage to one severs it.
-249
+
 ROT FLOWER
 Carnivorous flowers as large as 
 a human. They reek of carrion.
@@ -2455,7 +2454,7 @@ C +2, I +0, W +0, Ch +2, AL C, LV 3
 Scream. Creatures who hear 
 in double near DC 12 CHA or 
 paralyzed for 1d4 rounds.
-250
+
 SCORPION
 Desert-dwelling arachnids with 
 pincers and curved tail stingers.
@@ -2484,7 +2483,7 @@ C +2, I -2, W +0, Ch -1, AL C, LV 3
 Drain. Target takes 1 STR 
 damage. At 0 STR, target dies 
 and becomes a shadow.
-251
+
 SHAMBLING MOUND
 Fetid piles of slimy vegetation 
 animated to life by lightning.
@@ -2541,7 +2540,7 @@ grasslands and ice fields.
 AC 12, HP 14, ATK 2 bite +3 (1d6), 
 MV near, S +3, D +2, C +1, I -3, W
 +1, Ch -3, AL N, LV 3
-252
+
 SNAKE, GIANT
 An enormous, mottled serpent 
 that can swallow a cow whole.
@@ -2575,7 +2574,7 @@ AC 15 (chainmail + shield), HP
 crossbow (far) +1 (1d6), MV near, 
 S +1, D +0, C +1, I +0, W +0, Ch +0, 
 AL L, LV 2
-253
+
 SPHINX
 A winged, leonine oracle who 
 can see into time and space and 
@@ -2605,7 +2604,7 @@ One target in near frozen in time
 for 1d4 rounds.
 Unmake (WIS Spell). DC 13. One 
 target in far takes 3d8 damage. 
-254
+
 SPIDER
 Silent, web-weaving arachnids 
 with a flesh-dissolving venom.
@@ -2655,7 +2654,8 @@ Stealthy. ADV on DEX checks to
 sneak and hide. 
 Strangle. Deals x2 damage 
 against surprised creatures.
-255
+
+THE TEN-EYED ORACLE
 A floating mass of rubbery skin crusted with barnacles. Its ten 
 eyestalks writhe like snakes, and a deep, circular scar mars its 
 central body, blinding what was once a large eye above a lipless 
@@ -2664,6 +2664,9 @@ prophesies and somehow moving freely between the lightless
 fathoms of the earth. The keepers of the deep lore suspect The 
 Ten-Eyed Oracle was once a benevolent ally of mankind, but an 
 unknown calamity drove it to insanity and reckless hatred.
+\"The moon runs red into the sea, and the whispers of 
+the watchers in darkness proclaim: Your time has come!\"
+ -The Ten-Eyed Oracle
 AC 17, HP 85, ATK 2d4 eyestalk ray, MV near (fly), S +4, D +5, C +4, I +5, 
 W +4, Ch +4, AL C, LV 18
 Legendary. Only damaged by magical sources. Hostile spells 
@@ -2680,11 +2683,8 @@ creature or an object up to 1,000 pounds (up to four on same target).
 8. Disintegrate. DC 15 DEX or 5d8 damage (object destroyed). 
 9. Petrify. DC 15 CON or petrified.
 10. Death. DC 15 CON or drop to 0 HP with a death timer of 1.
-THE TEN-EYED ORACLE
-“The moon runs red into the sea, and the whispers of 
-the watchers in darkness proclaim: Your time has come!"
- -The Ten-Eyed Oracle
-256
+
+THE TARRASQUE
 A colossal, four-legged reptile with crocodilian jaws, amber scales, 
 and a diamond-hard, spiked carapace. It towers overhead like a 
 mountain, able to swallow entire villages in one gulp. The tarrasque 
@@ -2692,6 +2692,8 @@ hibernates deep in the earth or at the bottom of the sea for
 centuries, only awakening long enough to fill its vast belly in an 
 indiscriminate rampage of terror and destruction. There is only one 
 tarrasque, and it is the most dreaded creature to walk the earth.
+\"RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!\" 
+ -The Tarrasque
 AC 22, HP 140, ATK 4 thrash (near) +13 (3d10 + sever) and 1 bite (near) 
 +13 (5d10 + sever + swallow), MV triple near (burrow, swim), S +7, D +2, 
 C +5, I -3, W +1, Ch -3, AL N, LV 30
@@ -2710,11 +2712,8 @@ limb. 1d6: 1. Head, 2-4. Arm, 5-6. Leg.
 Swallow. DC 18 STR or swallowed whole. Total darkness inside and 
 4d10 damage per round. Tarrasque regurgitates all swallowed if 
 dealt at least 30 damage in one round to the inside of its gullet.
-THE TARRASQUE
- “RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!" 
- -The Tarrasque
 
-258
+THE WANDERING MERCHANT
 A cheerful merchant who appears to be a hale, middle-aged 
 human man with a handlebar mustache. He wears a white shirt, 
 breeches, and leather apron, and he hauls a towering backpack 
@@ -2723,6 +2722,9 @@ origins, though some theorize he is an immortal being or a god
 (they are not entirely incorrect). The Wandering Merchant always 
 has something useful, far-flung, or incredible to sell at a reasonable 
 price, and there's no telling when or where he'll show up next... 
+\"Fancy meeting you here, at the bottom of a pit trap! 
+I just so happen to have this lovely rope for sale...\" 
+ -The Wandering Merchant
 AC 16 (mithral chainmail), HP 71, ATK 4 +3 vorpal bastard sword +9 
 (1d10 + lop), MV near, S +3, D +3, C +4, I +3, W +4, Ch +5, AL L, LV 15
 Legendary. Only damaged by magical sources. Hostile spells 
@@ -2741,11 +2743,7 @@ a cockatrice. This curse can only be lifted by a wish spell or by
 returning the stolen goods.
 Strange Lands. The Wandering Merchant does not suffer any ill 
 effects from the natural environment he does not wish to suffer.
-THE WANDERING MERCHANT
-“Fancy meeting you here, at the bottom of a pit trap! 
-I just so happen to have this lovely rope for sale..." 
- -The Wandering Merchant
-259
+
 THIEF
 A cat burglar in a black cloak.
 AC 13 (leather), HP 13, ATK 1 
@@ -2786,7 +2784,7 @@ C, LV 5
 Regenerate. Regains 2d6 HP on 
 its turn unless its wounds are 
 cauterized with fire or acid.
-260
+
 TROLL, FROST
 Rime-covered trolls with blue 
 skin and flinty, black eyes. They 
@@ -2841,7 +2839,7 @@ each round while in direct
 sunlight. Cannot be killed unless 
 pierced through heart with a 
 wooden stake while at 0 HP.
-261
+
 VAMPIRE SPAWN
 Lesser, feral vampires born from 
 the bite of their vampiric sires. 
@@ -2883,7 +2881,7 @@ C
 +0, 
 I -4, 
 W -3, Ch -4, AL N, LV 2
-262
+
 VIPERIANS
 A fallen and scattered civilization 
 of snake-people who built their 
@@ -2940,7 +2938,7 @@ Focus. All enemies within near
 of viperian wizard have DISADV 
 on spellcasting checks for the 
 duration.
-263
+
 VULTURE
 Scavenger birds with black 
 feathers, hunched backs, and 
@@ -2991,7 +2989,7 @@ morale checks. Only damaged
 by silver or magical sources.
 Life Drain. 1d4 CON damage. 
 Death if reduced to 0 CON.
-264
+
 WILL-O'-WISP
 A bobbing marsh light 
 animated by an evil spirit. It tries 
@@ -3031,7 +3029,7 @@ Frost Breath. Fills a near-sized
 cube extending from winter 
 wolf. DC 15 DEX or 3d8 damage. 
 Cannot use again for 1d4 rounds.
-265
+
 WORG
 Bat-faced wolves that speak 
 Goblin and often serve as war 
