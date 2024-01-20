@@ -1,5 +1,5 @@
 {
-  "version": "2024.1.20.0",
+  "version": "2024.1.19.0",
   "thirdPartyLicenseText": "The Shadowdark JSON Project is an independent product published under the Shadowdark RPG Third-Party License and is not affiliated with The Arcane Library, LLC. Shadowdark RPG © 2023 The Arcane Library, LLC.",
   "magicItems": [],
   "monsters": [
@@ -1464,7 +1464,7 @@
       "actions": [
         {
           "name": "Crush",
-          "description": "DC 15 STR or target takes 1d8 damage. 203"
+          "description": "DC 15 STR or target takes 1d8 damage."
         }
       ],
       "stats": {
@@ -1629,7 +1629,7 @@
       "actions": [
         {
           "name": "Sunblind",
-          "description": "Blinded in bright light. 204"
+          "description": "Blinded in bright light."
         }
       ],
       "stats": {
@@ -1749,7 +1749,7 @@
       "actions": [
         {
           "name": "Gas",
-          "description": "All in near DC 12 CON or blinded for 1d4 rounds. 205"
+          "description": "All in near DC 12 CON or blinded for 1d4 rounds."
         }
       ],
       "stats": {
@@ -1825,7 +1825,7 @@
         },
         {
           "name": "Screech",
-          "description": "All enemies in double near DC 12 WIS or DISADV on checks and attacks for 1d4 rounds. 206"
+          "description": "All enemies in double near DC 12 WIS or DISADV on checks and attacks for 1d4 rounds."
         }
       ],
       "stats": {
@@ -1918,10 +1918,6 @@
         {
           "name": "Barb",
           "description": "Each spine sticks, dealing 1d4 damage each round. DC 12"
-        },
-        {
-          "name": "STR check on turn to remove",
-          "description": " 207"
         }
       ],
       "stats": {
@@ -2096,7 +2092,7 @@
         },
         {
           "name": "Poison",
-          "description": "DC 12 CON or fitful sleep for 1d4 hours. 208"
+          "description": "DC 12 CON or fitful sleep for 1d4 hours."
         }
       ],
       "stats": {
@@ -2294,7 +2290,7 @@
       "actions": [
         {
           "name": "Clever",
-          "description": "+1d4 damage when attacking with surprise. 209"
+          "description": "+1d4 damage when attacking with surprise."
         }
       ],
       "stats": {
@@ -2378,7 +2374,7 @@
         },
         {
           "name": "Telepathy",
-          "description": "Can secretly hear the surface thoughts of all humanoids within near. 210"
+          "description": "Can secretly hear the surface thoughts of all humanoids within near."
         }
       ],
       "stats": {
@@ -2468,7 +2464,7 @@
         },
         {
           "name": "Fire Breath",
-          "description": "Fills a double near-sized cube extending from dragon. DC 15 DEX or 6d10 damage. 211"
+          "description": "Fills a double near-sized cube extending from dragon. DC 15 DEX or 6d10 damage."
         }
       ],
       "stats": {
@@ -2791,7 +2787,7 @@
         },
         {
           "name": "Sunblind",
-          "description": "Blinded in bright light. 213"
+          "description": "Blinded in bright light."
         }
       ],
       "stats": {
@@ -2937,7 +2933,7 @@
         },
         {
           "name": "Sunblind",
-          "description": "Blinded in bright light. 214"
+          "description": "Blinded in bright light."
         }
       ],
       "stats": {
@@ -3011,7 +3007,7 @@
         },
         {
           "name": "Wish",
-          "description": "Cast wish once a week for a mortal, no spellcasting check. 215"
+          "description": "Cast wish once a week for a mortal, no spellcasting check."
         }
       ],
       "stats": {
@@ -3414,7 +3410,7 @@
       "actions": [
         {
           "name": "Impervious",
-          "description": "Only damaged by magical sources. 217"
+          "description": "Only damaged by magical sources."
         }
       ],
       "stats": {
@@ -3582,7 +3578,7 @@
         },
         {
           "name": "CHA check",
-          "description": "If ghost wins, it inhabits target's body and controls it for 2d4 rounds. 218"
+          "description": "If ghost wins, it inhabits target's body and controls it for 2d4 rounds."
         }
       ],
       "stats": {
@@ -3660,7 +3656,7 @@
       "actions": [
         {
           "name": "Fireblood",
-          "description": "Fire immune. 219"
+          "description": "Fire immune."
         }
       ],
       "stats": {
@@ -3872,7 +3868,8 @@
           "mod": 6
         }
       ],
-      "alignment": "Chaotic"
+      "alignment": "Chaotic",
+      "level": 10
     },
     {
       "name": "Gibbering Mouther",
@@ -3993,7 +3990,7 @@
       "actions": [
         {
           "name": "Stone Meld",
-          "description": "2/day, underground only. Turn invisible for 3 rounds. 221"
+          "description": "2/day, underground only. Turn invisible for 3 rounds."
         }
       ],
       "stats": {
@@ -4128,10 +4125,6 @@
         {
           "name": "Stink Bomb (WIS Spell)",
           "description": "DC 12. One target within far 2d4 damage and DC 12 CON or"
-        },
-        {
-          "name": "DISADV on next check/attack",
-          "description": " 222"
         }
       ],
       "stats": {
@@ -4297,7 +4290,7 @@
         },
         {
           "name": "Slow",
-          "description": "Far range, one target. DC 15 CON or speed halved 1d4 rds. 223"
+          "description": "Far range, one target. DC 15 CON or speed halved 1d4 rds."
         }
       ],
       "stats": {
@@ -4455,7 +4448,7 @@
         },
         {
           "name": "Grab",
-          "description": "Target is immobilized. DC 15 Strength check on turn to break free. 224"
+          "description": "Target is immobilized. DC 15 Strength check on turn to break free."
         }
       ],
       "stats": {
@@ -4590,7 +4583,8 @@
           "mod": 1
         }
       ],
-      "alignment": "Lawful"
+      "alignment": "Lawful",
+      "level": 10
     },
     {
       "name": "Hags",
@@ -4695,10 +4689,6 @@
         {
           "name": "Terrify",
           "description": "A creature who first sees her true form DC 15 CHA or"
-        },
-        {
-          "name": "DISADV on attacks 1d4 rounds",
-          "description": " 226"
         }
       ],
       "stats": {
@@ -4842,7 +4832,7 @@
       "actions": [
         {
           "name": "Stumpy",
-          "description": "ADV on STR checks to grab or drag other creatures. 227"
+          "description": "ADV on STR checks to grab or drag other creatures."
         }
       ],
       "stats": {
@@ -4984,7 +4974,7 @@
         },
         {
           "name": "Tracking",
-          "description": "Can always sense the direction of its chosen quarry. 228"
+          "description": "Can always sense the direction of its chosen quarry."
         }
       ],
       "stats": {
@@ -5124,10 +5114,6 @@
         {
           "name": "DC 12",
           "description": "A spider swarm appears within near. Stays 1d4 rounds."
-        },
-        {
-          "name": "Follows sorcerer's commands",
-          "description": " 229"
         }
       ],
       "stats": {
@@ -5224,7 +5210,7 @@
       "actions": [
         {
           "name": "Attach",
-          "description": "Attach to target; bite auto-hits next round. DC 12 STR on turn to tear off. 230"
+          "description": "Attach to target; bite auto-hits next round. DC 12 STR on turn to tear off."
         }
       ],
       "stats": {
@@ -5253,7 +5239,7 @@
     },
     {
       "name": "Leprechaun",
-      "description": "Impish fey who favor green garb and love fooling \\"tall folk\\" with promises of gold.",
+      "description": "Impish fey who favor green garb and love fooling \"tall folk\" with promises of gold.",
       "actions": [
         {
           "name": "Alert",
@@ -5350,7 +5336,7 @@
         },
         {
           "name": "Wither (INT Spell)",
-          "description": "DC 14. 4d8 damage to enemies within a near-sized cube centered on lich. 231"
+          "description": "DC 14. 4d8 damage to enemies within a near-sized cube centered on lich."
         }
       ],
       "stats": {
@@ -5509,7 +5495,7 @@
         },
         {
           "name": "Charge",
-          "description": "Move up to double near in straight line and make 1 tusks attack. If hit, x3 damage. 232"
+          "description": "Move up to double near in straight line and make 1 tusks attack. If hit, x3 damage."
         }
       ],
       "stats": {
@@ -5715,10 +5701,6 @@
         {
           "name": "Stick",
           "description": "DC 15 STR or adhere to target; auto-hit with bite. DC 15"
-        },
-        {
-          "name": "STR on turn to remove",
-          "description": " 233"
         }
       ],
       "stats": {
@@ -5788,6 +5770,35 @@
     {
       "name": "Moose",
       "description": "A towering, brown-haired grazer with weighty, flat antlers.",
+      "actions": [],
+      "stats": {
+        "movement": "double near",
+        "str_mod": 3,
+        "dex_mod": 0,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 0,
+        "cha_mod": -2
+      },
+      "armorClass": 11,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 antler +3 (1d6)",
+      "attacks": [
+        {
+          "name": "antler",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 3
+        }
+      ],
+      "alignment": "Neutral",
+      "level": 10
+    },
+    {
+      "name": "Mordanticus The Flayed",
+      "description": "A skinless mummy-lich wearing a crown set with nine bright gems. Once the head of the ancient, wizardly order of Gehemna, Mordanticus now lives in secret within the sanctum of Gehemna's reigning archmage. He has served as an advisor and historian for centuries, but an enduring enchantment prevents him from speaking of two topics: his origins, and The Ten-Eyed Oracle.",
       "actions": [
         {
           "name": "Legendary Undead",
@@ -5827,25 +5838,297 @@
         },
         {
           "name": "True Name (INT Spell)",
-          "description": "DC 15. Near. Learn the True Name of target."
+          "description": "DC 15. Near. Learn the True Name of target. \"Long have I held the weighty secrets of Gehemna, an age-old litany inscribed upon my weary soul.\" -Mordanticus the Flayed"
         }
       ],
       "stats": {
-        "movement": "double near",
-        "str_mod": 3,
+        "movement": "near",
+        "str_mod": 4,
         "dex_mod": 4,
-        "con_mod": 1,
-        "int_mod": -2,
+        "con_mod": 4,
+        "int_mod": 5,
         "wis_mod": 4,
-        "cha_mod": -2
+        "cha_mod": 5
       },
-      "armorClass": 11,
+      "armorClass": 17,
       "armor": "",
       "maxHitPoints": 55,
-      "attackText": "2 antler +3 (1d6)",
+      "attackText": "1 rot touch +8 (1d10 + necrosis) and 3 spell +8",
       "attacks": [
         {
-          "name": "antler",
+          "name": "rot touch",
+          "qty": 1,
+          "range": "",
+          "damage": "1d10",
+          "mod": 8
+        },
+        {
+          "name": "spell",
+          "qty": 3,
+          "range": "",
+          "damage": "",
+          "mod": 8
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Mummy",
+      "description": "A desiccated, linen-wrapped zombie. It was created with an intricate embalming ritual used only upon the most worthy warriors or rulers.",
+      "actions": [
+        {
+          "name": "Supreme Undead",
+          "description": "Immune to morale checks. Only damaged by magical sources."
+        },
+        {
+          "name": "Desiccated",
+          "description": "Can be damaged by fire. Takes x2 damage from it."
+        },
+        {
+          "name": "Necrosis",
+          "description": "DC 15 CON or drop to 0 HP. Healing spells are DC 15 to cast on target while at 0 HP due to this effect."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 3,
+        "dex_mod": 0,
+        "con_mod": 2,
+        "int_mod": 3,
+        "wis_mod": 2,
+        "cha_mod": 3
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "3 rot touch +8 (1d10 + necrosis)",
+      "attacks": [
+        {
+          "name": "rot touch",
+          "qty": 3,
+          "range": "",
+          "damage": "1d10",
+          "mod": 8
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Mushroomfolk",
+      "description": "Lumbering humanoids with spongy, elongated bodies and toadstools on their heads.",
+      "actions": [
+        {
+          "name": "Sunblind",
+          "description": "Blinded in bright light."
+        },
+        {
+          "name": "Telepathic",
+          "description": "Speak mentally with creatures within double near."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 2,
+        "dex_mod": -1,
+        "con_mod": 2,
+        "int_mod": 0,
+        "wis_mod": 1,
+        "cha_mod": 0
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 slam +2 (1d6)",
+      "attacks": [
+        {
+          "name": "slam",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 2
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Naga",
+      "description": "Magic-wielding cobras towering ten feet high. Once a dominant species, they are now rare and reclusive, bitter to the last.",
+      "actions": [
+        {
+          "name": "Poison",
+          "description": "DC 15 CON or paralyzed 1d4 rounds."
+        },
+        {
+          "name": "Agony (CHA Spell)",
+          "description": "DC 14. One target in near takes 3d8 damage."
+        },
+        {
+          "name": "Hypnotize (CHA Spell)",
+          "description": "DC 13."
+        },
+        {
+          "name": "Focus",
+          "description": "One target in near range who can see naga is helplessly stupefied for duration."
+        },
+        {
+          "name": "Whispers (CHA Spell)",
+          "description": "DC 12."
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 4,
+        "dex_mod": 1,
+        "con_mod": 3,
+        "int_mod": 2,
+        "wis_mod": 2,
+        "cha_mod": 4
+      },
+      "armorClass": 16,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 bite +7 (2d6 + poison) and 1 spell +7",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 2,
+          "range": "",
+          "damage": "2d6",
+          "mod": 7
+        },
+        {
+          "name": "spell",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "mod": 7
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Naga, Bone",
+      "description": "Mindless, skeletal husks of nagas reanimated by sorcery.",
+      "actions": [
+        {
+          "name": "Greater Undead",
+          "description": "Immune to morale checks. Only damaged by silver or magical sources."
+        }
+      ],
+      "stats": {
+        "movement": "near (burrow",
+        "str_mod": 3,
+        "dex_mod": 2,
+        "con_mod": 4,
+        "int_mod": -3,
+        "wis_mod": 0,
+        "cha_mod": 4
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 bite +5 (2d6)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 2,
+          "range": "",
+          "damage": "2d6",
+          "mod": 5
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Nightmare",
+      "description": "Black warhorses with flaming manes, hooves, and eyes.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Nightmare and its rider immune to fire."
+        },
+        {
+          "name": "Legendary Undead",
+          "description": "Immune to morale checks. Only damaged by magical sources. Hostile spells targeting Obe-Ixx are DC 18 to cast."
+        },
+        {
+          "name": "Blood Drain",
+          "description": "Obe-Ixx heals 2d8 HP, target permanently loses 1d6"
+        },
+        {
+          "name": "CON",
+          "description": "At 0 CON, target dies and rises as a loyal vampire or vampire spawn (Obe-Ixx chooses)."
+        },
+        {
+          "name": "Charm",
+          "description": "One humanoid target who can see Obe-Ixx within near, DC 15 CHA or under Obe-Ixx's control for 1d4 days."
+        },
+        {
+          "name": "Dire Shapechange",
+          "description": "In place of attacks, turn into a giant bat, dire wolf, or back into regular form."
+        },
+        {
+          "name": "Moonbite Properties",
+          "description": "+2 greatsword, thrown weapon, returns after being thrown. Spells to heal damage it inflicts are DC 15 to cast."
+        },
+        {
+          "name": "Ur-Vampire",
+          "description": "Must sleep in sarcophagus at least once per moon cycle or loses 2d8 HP per day that cannot heal until sleeping in sarcophagus. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart while at 0"
+        },
+        {
+          "name": "HP with a wooden stake carved from a tree from the Tal-Yool jungle",
+          "description": " \"By this blade, the empire of Azarumme shall rise again!\" -Obe-Ixx of Azarumme"
+        }
+      ],
+      "stats": {
+        "movement": "double near (fly)",
+        "str_mod": 3,
+        "dex_mod": 3,
+        "con_mod": 2,
+        "int_mod": -1,
+        "wis_mod": 1,
+        "cha_mod": -2
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 hooves +5 (1d8)",
+      "attacks": [
+        {
+          "name": "hooves",
+          "qty": 2,
+          "range": "",
+          "damage": "1d8",
+          "mod": 5
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Ochre Jelly",
+      "description": "An orange puddle of quivering slime.",
+      "actions": [
+        {
+          "name": "Split",
+          "description": "If cut or chopped, split into two smaller oozes (divide remaining HP between both)."
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 2,
+        "dex_mod": -1,
+        "con_mod": 2,
+        "int_mod": -4,
+        "wis_mod": -3,
+        "cha_mod": -4
+      },
+      "armorClass": 9,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 tentacle +3 (1d6)",
+      "attacks": [
+        {
+          "name": "tentacle",
           "qty": 2,
           "range": "",
           "damage": "1d6",
@@ -5855,10 +6138,977 @@
       "alignment": "Neutral"
     },
     {
-      "name": "Mordanticus The Flayed",
-      "description": "“Long have I held the weighty secrets of Gehemna, an age-old litany inscribed upon my weary soul.\\" -Mordanticus the Flayed 236","actions":[],"stats":{}},{"name":"Mummy","description":"A desiccated, linen-wrapped zombie. It was created with an intricate embalming ritual used only upon the most worthy warriors or rulers.","actions":[{"name":"Supreme Undead","description":"Immune to morale checks. Only damaged by magical sources."},{"name":"Desiccated","description":"Can be damaged by fire. Takes x2 damage from it."},{"name":"Necrosis","description":"DC 15 CON or drop to 0 HP. Healing spells are DC 15 to cast on target while at 0 HP due to this effect."}],"stats":{"movement":"near","str_mod":3,"dex_mod":0,"con_mod":2,"int_mod":3,"wis_mod":2,"cha_mod":3},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"3 rot touch +8 (1d10 + necrosis)","attacks":[{"name":"rot touch","qty":3,"range":"","damage":"1d10","mod":8}],"alignment":"Chaotic"},{"name":"Mushroomfolk","description":"Lumbering humanoids with spongy, elongated bodies and toadstools on their heads.","actions":[{"name":"Sunblind","description":"Blinded in bright light."},{"name":"Telepathic","description":"Speak mentally with creatures within double near. 237"}],"stats":{"movement":"near","str_mod":2,"dex_mod":-1,"con_mod":2,"int_mod":0,"wis_mod":1,"cha_mod":0},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 slam +2 (1d6)","attacks":[{"name":"slam","qty":2,"range":"","damage":"1d6","mod":2}],"alignment":"Neutral"},{"name":"Naga","description":"Magic-wielding cobras towering ten feet high. Once a dominant species, they are now rare and reclusive, bitter to the last.","actions":[{"name":"Poison","description":"DC 15 CON or paralyzed 1d4 rounds."},{"name":"Agony (CHA Spell)","description":"DC 14. One target in near takes 3d8 damage."},{"name":"Hypnotize (CHA Spell)","description":"DC 13."},{"name":"Focus","description":"One target in near range who can see naga is helplessly stupefied for duration."},{"name":"Whispers (CHA Spell)","description":"DC 12."}],"stats":{"movement":"near (climb)","str_mod":4,"dex_mod":1,"con_mod":3,"int_mod":2,"wis_mod":2,"cha_mod":4},"armorClass":16,"armor":"","maxHitPoints":55,"attackText":"2 bite +7 (2d6 + poison) and 1 spell +7","attacks":[{"name":"bite","qty":2,"range":"","damage":"2d6","mod":7},{"name":"spell","qty":1,"range":"","damage":"","mod":7}],"alignment":"Chaotic"},{"name":"Naga, Bone","description":"Mindless, skeletal husks of nagas reanimated by sorcery.","actions":[{"name":"Greater Undead","description":"Immune to morale checks. Only damaged by silver or magical sources."}],"stats":{"movement":"near (burrow","str_mod":3,"dex_mod":2,"con_mod":4,"int_mod":-3,"wis_mod":0,"cha_mod":4},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 bite +5 (2d6)","attacks":[{"name":"bite","qty":2,"range":"","damage":"2d6","mod":5}],"alignment":"Chaotic"},{"name":"Nightmare","description":"Black warhorses with flaming manes, hooves, and eyes.","actions":[{"name":"Impervious","description":"Nightmare and its rider immune to fire. 238"},{"name":"Legendary Undead","description":"Immune to morale checks. Only damaged by magical sources. Hostile spells targeting Obe-Ixx are DC 18 to cast."},{"name":"Blood Drain","description":"Obe-Ixx heals 2d8 HP, target permanently loses 1d6"},{"name":"CON","description":"At 0 CON, target dies and rises as a loyal vampire or vampire spawn (Obe-Ixx chooses)."},{"name":"Charm","description":"One humanoid target who can see Obe-Ixx within near, DC 15 CHA or under Obe-Ixx's control for 1d4 days."},{"name":"Dire Shapechange","description":"In place of attacks, turn into a giant bat, dire wolf, or back into regular form."},{"name":"Moonbite Properties","description":"+2 greatsword, thrown weapon, returns after being thrown. Spells to heal damage it inflicts are DC 15 to cast."},{"name":"Ur-Vampire","description":"Must sleep in sarcophagus at least once per moon cycle or loses 2d8 HP per day that cannot heal until sleeping in sarcophagus. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart while at 0"}],"stats":{"movement":"double near (fly)","str_mod":3,"dex_mod":3,"con_mod":2,"int_mod":-1,"wis_mod":1,"cha_mod":-2},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 hooves +5 (1d8)","attacks":[{"name":"hooves","qty":2,"range":"","damage":"1d8","mod":5}],"alignment":"Chaotic"},{"name":"Ochre Jelly","description":"An orange puddle of quivering slime.","actions":[{"name":"Split","description":"If cut or chopped, split into two smaller oozes (divide remaining HP between both)."}],"stats":{"movement":"near (climb)","str_mod":2,"dex_mod":-1,"con_mod":2,"int_mod":-4,"wis_mod":-3,"cha_mod":-4},"armorClass":9,"armor":"","maxHitPoints":55,"attackText":"2 tentacle +3 (1d6)","attacks":[{"name":"tentacle","qty":2,"range":"","damage":"1d6","mod":3}],"alignment":"Neutral"},{"name":"Octopus, Giant","description":"Octopi as large as sailing skiffs.","actions":[{"name":"Grab","description":"DC 15 STR or immobilized."},{"name":"Ink","description":"In place of attacks, ink cloud blinds all in near for 1d4 rounds."}],"stats":{"movement":"near (swim)","str_mod":3,"dex_mod":3,"con_mod":1,"int_mod":-2,"wis_mod":1,"cha_mod":-3},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 tentacle (near) +4 (1d8 + grab)","attacks":[{"name":"tentacle","qty":2,"range":"near","damage":"1d8","mod":4}],"alignment":"Neutral"},{"name":"Ogre","description":"A massive, dim-witted brute with tusks and a heavy frame. Often lords over goblins or orcs.","actions":[],"stats":{"movement":"near","str_mod":4,"dex_mod":-1,"con_mod":3,"int_mod":-2,"wis_mod":-2,"cha_mod":-2},"armorClass":9,"armor":"","maxHitPoints":55,"attackText":"2 greatclub +6 (2d6)","attacks":[{"name":"greatclub","qty":2,"range":"","damage":"2d6","mod":6}],"alignment":"Chaotic","level":10},{"name":"Oni","description":"Cunning and sorcerous ogre-demons with shaggy white hair, blue skin, and yellow eyes.","actions":[{"name":"Shapeshift","description":"In place of attacks, turn into any humanoid or back into original form."},{"name":"Fade (CHA Spell)","description":"DC 13. Self."},{"name":"Hellfrost (CHA Spell)","description":"DC 13."},{"name":"Mist (CHA Spell)","description":"DC 13. Self."}],"stats":{"movement":"near","str_mod":5,"dex_mod":1,"con_mod":2,"int_mod":2,"wis_mod":1,"cha_mod":3},"armorClass":11,"armor":"","maxHitPoints":55,"attackText":"1 glaive (near) +6 (1d10) or 1 spell +5","attacks":[{"name":"glaive","qty":1,"range":"near","damage":"1d10","mod":6},{"name":"spell","qty":1,"range":"","damage":"","mod":5}],"alignment":"Chaotic"},{"name":"Orc","description":"A tusked, tall humanoid with gray skin and pointed ears.","actions":[{"name":"Rage","description":"1/day, immune to morale checks, +1d4 damage (3 rounds)."}],"stats":{"movement":"near","str_mod":2,"dex_mod":0,"con_mod":0,"int_mod":-1,"wis_mod":0,"cha_mod":-1},"armorClass":15,"armor":"","maxHitPoints":55,"attackText":"1 greataxe +2 (1d8)","attacks":[{"name":"greataxe","qty":1,"range":"","damage":"1d8","mod":2}],"alignment":"Chaotic"},{"name":"Orc, Chieftain","description":"An imposing orc with scars crisscrossing its body.","actions":[{"name":"Rage","description":"1/day, immune to morale checks, +1d4 damage (3 rounds)."}],"stats":{"movement":"near","str_mod":2,"dex_mod":1,"con_mod":1,"int_mod":-1,"wis_mod":0,"cha_mod":-1},"armorClass":14,"armor":"chainmail","maxHitPoints":55,"attackText":"2 greataxe +4 (1d10)","attacks":[{"name":"greataxe","qty":2,"range":"","damage":"1d10","mod":4}],"alignment":"Chaotic"},{"name":"Otyugh","description":"Stumpy, three-legged beasts with barbed tentacles and vast mouths. Drawn by rot and filth.","actions":[{"name":"Disease","description":"DC 15 CON or infected."},{"name":"HP (can't heal)","description":"Ends on success. 241"}],"stats":{"movement":"near","str_mod":4,"dex_mod":-1,"con_mod":4,"int_mod":-2,"wis_mod":0,"cha_mod":-3},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 tentacle +5 (1d8) and 1 bite +5 (1d10 + disease)","attacks":[{"name":"tentacle","qty":2,"range":"","damage":"1d8","mod":5},{"name":"bite","qty":1,"range":"","damage":"1d10","mod":5}],"alignment":"Neutral"},{"name":"Outsiders","description":"Alien horrors from the frozen, outer reaches of the cosmos or the Chaos-infused Dark Realms. Outsiders were born from the nightmares of gods and are unsettling to all other creatures.","actions":[],"stats":{}},{"name":"Primordial Slime","description":"A mass of clear ooze strobing with sick pulses of violet light.","actions":[{"name":"Impervious","description":"Only harmed by fire."},{"name":"Dissolve","description":"One random piece of non-magical gear the target carries is destroyed."}],"stats":{"movement":"near (climb)","str_mod":3,"dex_mod":2,"con_mod":3,"int_mod":-4,"wis_mod":-3,"cha_mod":-4},"armorClass":9,"armor":"","maxHitPoints":55,"attackText":"2 tentacle +4 (1d10 + dissolve)","attacks":[{"name":"tentacle","qty":2,"range":"","damage":"1d10","mod":4}],"alignment":"Chaotic"},{"name":"Void Spawn","description":"Scythe-like limbs jut from a purple bulb as big as an ogre. Its lower half is a nest of tentacles.","actions":[{"name":"Impervious","description":"Immune to cold."},{"name":"Toxin","description":"DC 12 CON or paralyzed for 1d4 rounds."}],"stats":{"movement":"near (fly)","str_mod":4,"dex_mod":1,"con_mod":3,"int_mod":0,"wis_mod":1,"cha_mod":-1},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 scythe +6 (1d10) and 1 tentacles +6 (1d12 + toxin)","attacks":[{"name":"scythe","qty":2,"range":"","damage":"1d10","mod":6},{"name":"tentacles","qty":1,"range":"","damage":"1d12","mod":6}],"alignment":"Chaotic"},{"name":"Void Spider","description":"Pale, horse-sized arachnids that become ghostly and intangible.","actions":[{"name":"Impervious","description":"Immune to cold."},{"name":"Phase","description":"Once per round, become corporeal or incorporeal."},{"name":"Poison","description":"DC 12 CON or drop to 0"}],"stats":{"movement":"near (climb)","str_mod":3,"dex_mod":3,"con_mod":1,"int_mod":-1,"wis_mod":1,"cha_mod":-2},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 bite +4 (1d8 + poison)","attacks":[{"name":"bite","qty":2,"range":"","damage":"1d8","mod":4}],"alignment":"Chaotic"},{"name":"Rime Walker","description":"Human-shaped beings formed from black space ice. Their eyes are two flickering, white lights.","actions":[{"name":"Impervious","description":"Immune to cold."},{"name":"Ice Aura","description":"Enemies within near of rime walker DC 12 CON at start of turn or lose action. 242"}],"stats":{"movement":"near (fly)","str_mod":4,"dex_mod":4,"con_mod":3,"int_mod":2,"wis_mod":2,"cha_mod":2},"armorClass":16,"armor":"","maxHitPoints":55,"attackText":"4 claw +8 (1d12)","attacks":[{"name":"claw","qty":4,"range":"","damage":"1d12","mod":8}],"alignment":"Chaotic"},{"name":"Owlbear","description":"Cantankerous bears with owl eyes, beaks, and feathers.","actions":[{"name":"Crush","description":"Deals an extra die of damage if it hits the same target with both claws."}],"stats":{"movement":"near (climb)","str_mod":4,"dex_mod":1,"con_mod":3,"int_mod":-2,"wis_mod":2,"cha_mod":-3},"armorClass":13,"armor":"","maxHitPoints":55,"attackText":"2 claw +5 (1d10)","attacks":[{"name":"claw","qty":2,"range":"","damage":"1d10","mod":5}],"alignment":"Neutral"},{"name":"Panther","description":"Supple large cats with blue-black fur. Stealthy hunters.","actions":[],"stats":{"movement":"near (climb)","str_mod":3,"dex_mod":4,"con_mod":1,"int_mod":-2,"wis_mod":1,"cha_mod":-3},"armorClass":14,"armor":"","maxHitPoints":55,"attackText":"2 rend +3 (1d6)","attacks":[{"name":"rend","qty":2,"range":"","damage":"1d6","mod":3}],"alignment":"Neutral","level":10},{"name":"Peasant","description":"A commoner in worn clothes.","actions":[],"stats":{"movement":"near","str_mod":0,"dex_mod":0,"con_mod":0,"int_mod":0,"wis_mod":0,"cha_mod":0},"armorClass":10,"armor":"","maxHitPoints":55,"attackText":"1 club +0 (1d4)","attacks":[{"name":"club","qty":1,"range":"","damage":"1d4"}],"alignment":"Lawful","level":10},{"name":"Pegasus","description":"Winged horses with noble bearings and pearly white coats.","actions":[],"stats":{"movement":"double near (fly)","str_mod":3,"dex_mod":2,"con_mod":2,"int_mod":-3,"wis_mod":1,"cha_mod":0},"armorClass":12,"armor":"","maxHitPoints":55,"attackText":"2 hooves +3 (1d6)","attacks":[{"name":"hooves","qty":2,"range":"","damage":"1d6","mod":3}],"alignment":"Neutral"},{"name":"Phoenix","description":"Huge, soaring eagles made of searing flames. Intelligent and imbued with immortal magic.","actions":[{"name":"Impervious","description":"Immune to fire."},{"name":"Explosion","description":"Upon death, creatures within double near of phoenix DC 18 DEX or 10d6 damage."},{"name":"Heat Aura","description":"Creatures within near of phoenix at start of turn DC 15"},{"name":"Rebirth","description":"A red-hot egg remains after death. Phoenix hatches from it in 1d4 days."}],"stats":{"movement":"double near (fly)","str_mod":3,"dex_mod":4,"con_mod":2,"int_mod":3,"wis_mod":3,"cha_mod":3},"armorClass":16,"armor":"","maxHitPoints":55,"attackText":"4 rend +8 (2d12)","attacks":[{"name":"rend","qty":4,"range":"","damage":"2d12","mod":8}],"alignment":"Lawful"},{"name":"Piranha, Swarm","description":"A school of flat, silvery fish with vicious fangs.","actions":[{"name":"Savage","description":"ADV on attacks against creatures below half their HP."}],"stats":{"movement":"near (swim)","str_mod":-2,"dex_mod":2,"con_mod":0,"int_mod":-3,"wis_mod":0,"cha_mod":-3},"armorClass":12,"armor":"","maxHitPoints":55,"attackText":"2 bite +2 (1d6)","attacks":[{"name":"bite","qty":2,"range":"","damage":"1d6","mod":2}],"alignment":"Neutral"},{"name":"Pirate","description":"Seafaring scoundrels who live to steal and hoard treasure.","actions":[],"stats":{"movement":"near","str_mod":1,"dex_mod":1,"con_mod":0,"int_mod":0,"wis_mod":0,"cha_mod":0},"armorClass":12,"armor":"leather","maxHitPoints":55,"attackText":"1 cutlass +1 (1d6) or 1 dagger (close/ near) +1 (1d4)","attacks":[{"name":"cutlass","qty":1,"range":"","damage":"1d6","mod":1},{"name":"dagger","qty":1,"range":"close/ near","damage":"1d4","mod":1}],"alignment":"Chaotic","level":10},{"name":"Priest","description":"A respected member of a clergy who leads holy rituals and rites.","actions":[{"name":"Anoint (WIS Spell)","description":"DC 12. Close."},{"name":"Healing Touch (WIS Spell)","description":"DC 11. Heal one creature within close for 2d4 HP."},{"name":"Holy Flame (WIS Spell)","description":"DC 13."},{"name":"Self","description":"Weapons ignite in magic flames and deal an additional 1d6 damage for 5 rounds."},{"name":"Rebuke (WIS Spell)","description":"DC 13."},{"name":"Focus","description":"Chaotic creatures cannot attack priest or come within near range for duration. 244"}],"stats":{"movement":"near","str_mod":1,"dex_mod":0,"con_mod":1,"int_mod":0,"wis_mod":2,"cha_mod":1},"armorClass":15,"armor":"","maxHitPoints":55,"attackText":"2 mace +3 (1d6) or 1 spell +3","attacks":[{"name":"mace","qty":2,"range":"","damage":"1d6","mod":3},{"name":"spell","qty":1,"range":"","damage":"","mod":3}],"alignment":"Lawful"},{"name":"Purple Worm","description":"A massive worm as tall as a castle keep. Has a rotating maw and is covered in purple chitin.","actions":[{"name":"Poison","description":"DC 15 CON or go to 0 HP."},{"name":"Swallow","description":"On a natural attack roll of 18-20, target is swallowed."}],"stats":{"movement":"double near (burrow)","str_mod":5,"dex_mod":1,"con_mod":3,"int_mod":-3,"wis_mod":1,"cha_mod":-3},"armorClass":18,"armor":"","maxHitPoints":55,"attackText":"2 bite +9 (2d12 + swallow) and 1 sting +9 (1d10 + poison)","attacks":[{"name":"bite","qty":2,"range":"","damage":"2d12","mod":9},{"name":"sting","qty":1,"range":"","damage":"1d10","mod":9}],"alignment":"Neutral"},{"name":"Rakshasa","description":"Demonic illusionists whose true form is of a humanlike great cat with backwards hands.","actions":[{"name":"Impervious","description":"Only damaged by magical sources. Immune to hostile spells of 3rd tier or lower."},{"name":"Mesmerism","description":"Can read the minds of all creatures within near. Can instantly take on the illusory appearance of any humanoid."},{"name":"Weakness","description":"A crossbow bolt under the effects of the holy weapon spell kills the rakshasa. 245"}],"stats":{"movement":"near","str_mod":1,"dex_mod":3,"con_mod":3,"int_mod":3,"wis_mod":3,"cha_mod":4},"armorClass":16,"armor":"","maxHitPoints":55,"attackText":"2 claw +6 (1d8)","attacks":[{"name":"claw","qty":2,"range":"","damage":"1d8","mod":6}],"alignment":"Chaotic"},{"name":"Rat","description":"Rangy, plague-carrying rodents that infest underground places.","actions":[{"name":"Disease","description":"DC 9 CON or 1d4 CON damage (can't heal while ill)."}],"stats":{"movement":"near","str_mod":-3,"dex_mod":0,"con_mod":1,"int_mod":-3,"wis_mod":1,"cha_mod":-3},"armorClass":10,"armor":"","maxHitPoints":55,"attackText":"1 bite +0 (1 + disease)","attacks":[{"name":"bite","qty":1,"range":"","damage":""}],"alignment":"Neutral"},{"name":"Rat, Giant","description":"Cunning rats as large as cats. Mangy fur and wormlike tails.","actions":[{"name":"Disease","description":"DC 12 CON or 1d4 CON damage (can't heal while ill)."}],"stats":{"movement":"near","str_mod":-2,"dex_mod":1,"con_mod":1,"int_mod":-2,"wis_mod":1,"cha_mod":-2},"armorClass":11,"armor":"","maxHitPoints":55,"attackText":"1 bite +1 (1d4 + disease)","attacks":[{"name":"bite","qty":1,"range":"","damage":"1d4","mod":1}],"alignment":"Neutral"},{"name":"Rat, Dire","description":"Child-sized, savage rats bristling with bony face and spine ridges.","actions":[{"name":"Disease","description":"DC 12 CON or 1d4 CON damage (can't heal while ill)."}],"stats":{"movement":"near","str_mod":1,"dex_mod":2,"con_mod":1,"int_mod":-2,"wis_mod":1,"cha_mod":-2},"armorClass":12,"armor":"","maxHitPoints":55,"attackText":"1 bite +2 (1d6 + disease)","attacks":[{"name":"bite","qty":1,"range":"","damage":"1d6","mod":2}],"alignment":"Neutral"},{"name":"Rat, Swarm","description":"A screeching tidal wave of clawing and biting rats.","actions":[{"name":"Disease","description":"DC 9 CON or 1d4 CON damage (can't heal while ill)."},{"name":"Legendary","description":"Only damaged by magical sources. Hostile spells targeting Rathgamnon are DC 18 to cast."},{"name":"Roar","description":"In place of attacks, all creatures who can hear within far DC 18"},{"name":"Abjure (WIS Spell)","description":"DC 13. Self. End any hostile magical effects affecting Rathgamnon."},{"name":"Abolish (WIS Spell)","description":"DC 13. One target in far takes 5d8 damage."},{"name":"Anchor (WIS Spell)","description":"DC 14. One target in far DC 18 STR or bound and anchored by chains of golden runes for 1d4 rounds."},{"name":"Gate (WIS Spell)","description":"DC 14. Open a portal at a point within near to another location on any plane. Lasts 1d6 rounds or until dismissed."},{"name":"Portent (WIS Spell)","description":"DC 14. Lasts 2d4 rounds. One target in near has advantage or disadvantage on all attack rolls and checks."},{"name":"Time Stop (WIS Spell)","description":"DC 15. Self. Time freezes for everyone except"},{"name":"Rathgamnon for 1d4 rounds","description":"Everything that occurs during the time freeze happens simultaneously when the spell ends."}],"stats":{"movement":"near","str_mod":-3,"dex_mod":3,"con_mod":1,"int_mod":-3,"wis_mod":1,"cha_mod":-3},"armorClass":10,"armor":"","maxHitPoints":55,"attackText":"4 bite +0 (1 + disease)","attacks":[{"name":"bite","qty":4,"range":"","damage":""}],"alignment":"Neutral"},{"name":"Rathgamnon","description":"“The stars told me of your arrival here many eons ago, long before the first of your people walked the earth.\\" -Rathgamnon 247",
+      "name": "Octopus, Giant",
+      "description": "Octopi as large as sailing skiffs.",
+      "actions": [
+        {
+          "name": "Grab",
+          "description": "DC 15 STR or immobilized."
+        },
+        {
+          "name": "Ink",
+          "description": "In place of attacks, ink cloud blinds all in near for 1d4 rounds."
+        }
+      ],
+      "stats": {
+        "movement": "near (swim)",
+        "str_mod": 3,
+        "dex_mod": 3,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 1,
+        "cha_mod": -3
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 tentacle (near) +4 (1d8 + grab)",
+      "attacks": [
+        {
+          "name": "tentacle",
+          "qty": 2,
+          "range": "near",
+          "damage": "1d8",
+          "mod": 4
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Ogre",
+      "description": "A massive, dim-witted brute with tusks and a heavy frame. Often lords over goblins or orcs.",
+      "actions": [],
+      "stats": {
+        "movement": "near",
+        "str_mod": 4,
+        "dex_mod": -1,
+        "con_mod": 3,
+        "int_mod": -2,
+        "wis_mod": -2,
+        "cha_mod": -2
+      },
+      "armorClass": 9,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 greatclub +6 (2d6)",
+      "attacks": [
+        {
+          "name": "greatclub",
+          "qty": 2,
+          "range": "",
+          "damage": "2d6",
+          "mod": 6
+        }
+      ],
+      "alignment": "Chaotic",
+      "level": 10
+    },
+    {
+      "name": "Oni",
+      "description": "Cunning and sorcerous ogre-demons with shaggy white hair, blue skin, and yellow eyes.",
+      "actions": [
+        {
+          "name": "Shapeshift",
+          "description": "In place of attacks, turn into any humanoid or back into original form."
+        },
+        {
+          "name": "Fade (CHA Spell)",
+          "description": "DC 13. Self."
+        },
+        {
+          "name": "Hellfrost (CHA Spell)",
+          "description": "DC 13."
+        },
+        {
+          "name": "Mist (CHA Spell)",
+          "description": "DC 13. Self."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 5,
+        "dex_mod": 1,
+        "con_mod": 2,
+        "int_mod": 2,
+        "wis_mod": 1,
+        "cha_mod": 3
+      },
+      "armorClass": 11,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 glaive (near) +6 (1d10) or 1 spell +5",
+      "attacks": [
+        {
+          "name": "glaive",
+          "qty": 1,
+          "range": "near",
+          "damage": "1d10",
+          "mod": 6
+        },
+        {
+          "name": "spell",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "mod": 5
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Orc",
+      "description": "A tusked, tall humanoid with gray skin and pointed ears.",
+      "actions": [
+        {
+          "name": "Rage",
+          "description": "1/day, immune to morale checks, +1d4 damage (3 rounds)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 2,
+        "dex_mod": 0,
+        "con_mod": 0,
+        "int_mod": -1,
+        "wis_mod": 0,
+        "cha_mod": -1
+      },
+      "armorClass": 15,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 greataxe +2 (1d8)",
+      "attacks": [
+        {
+          "name": "greataxe",
+          "qty": 1,
+          "range": "",
+          "damage": "1d8",
+          "mod": 2
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Orc, Chieftain",
+      "description": "An imposing orc with scars crisscrossing its body.",
+      "actions": [
+        {
+          "name": "Rage",
+          "description": "1/day, immune to morale checks, +1d4 damage (3 rounds)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 2,
+        "dex_mod": 1,
+        "con_mod": 1,
+        "int_mod": -1,
+        "wis_mod": 0,
+        "cha_mod": -1
+      },
+      "armorClass": 14,
+      "armor": "chainmail",
+      "maxHitPoints": 55,
+      "attackText": "2 greataxe +4 (1d10)",
+      "attacks": [
+        {
+          "name": "greataxe",
+          "qty": 2,
+          "range": "",
+          "damage": "1d10",
+          "mod": 4
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Otyugh",
+      "description": "Stumpy, three-legged beasts with barbed tentacles and vast mouths. Drawn by rot and filth.",
+      "actions": [
+        {
+          "name": "Disease",
+          "description": "DC 15 CON or infected."
+        },
+        {
+          "name": "HP (can't heal)",
+          "description": "Ends on success."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 4,
+        "dex_mod": -1,
+        "con_mod": 4,
+        "int_mod": -2,
+        "wis_mod": 0,
+        "cha_mod": -3
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 tentacle +5 (1d8) and 1 bite +5 (1d10 + disease)",
+      "attacks": [
+        {
+          "name": "tentacle",
+          "qty": 2,
+          "range": "",
+          "damage": "1d8",
+          "mod": 5
+        },
+        {
+          "name": "bite",
+          "qty": 1,
+          "range": "",
+          "damage": "1d10",
+          "mod": 5
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Outsiders",
+      "description": "Alien horrors from the frozen, outer reaches of the cosmos or the Chaos-infused Dark Realms. Outsiders were born from the nightmares of gods and are unsettling to all other creatures.",
       "actions": [],
       "stats": {}
+    },
+    {
+      "name": "Primordial Slime",
+      "description": "A mass of clear ooze strobing with sick pulses of violet light.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Only harmed by fire."
+        },
+        {
+          "name": "Dissolve",
+          "description": "One random piece of non-magical gear the target carries is destroyed."
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 3,
+        "dex_mod": 2,
+        "con_mod": 3,
+        "int_mod": -4,
+        "wis_mod": -3,
+        "cha_mod": -4
+      },
+      "armorClass": 9,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 tentacle +4 (1d10 + dissolve)",
+      "attacks": [
+        {
+          "name": "tentacle",
+          "qty": 2,
+          "range": "",
+          "damage": "1d10",
+          "mod": 4
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Void Spawn",
+      "description": "Scythe-like limbs jut from a purple bulb as big as an ogre. Its lower half is a nest of tentacles.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Immune to cold."
+        },
+        {
+          "name": "Toxin",
+          "description": "DC 12 CON or paralyzed for 1d4 rounds."
+        }
+      ],
+      "stats": {
+        "movement": "near (fly)",
+        "str_mod": 4,
+        "dex_mod": 1,
+        "con_mod": 3,
+        "int_mod": 0,
+        "wis_mod": 1,
+        "cha_mod": -1
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 scythe +6 (1d10) and 1 tentacles +6 (1d12 + toxin)",
+      "attacks": [
+        {
+          "name": "scythe",
+          "qty": 2,
+          "range": "",
+          "damage": "1d10",
+          "mod": 6
+        },
+        {
+          "name": "tentacles",
+          "qty": 1,
+          "range": "",
+          "damage": "1d12",
+          "mod": 6
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Void Spider",
+      "description": "Pale, horse-sized arachnids that become ghostly and intangible.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Immune to cold."
+        },
+        {
+          "name": "Phase",
+          "description": "Once per round, become corporeal or incorporeal."
+        },
+        {
+          "name": "Poison",
+          "description": "DC 12 CON or drop to 0"
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 3,
+        "dex_mod": 3,
+        "con_mod": 1,
+        "int_mod": -1,
+        "wis_mod": 1,
+        "cha_mod": -2
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 bite +4 (1d8 + poison)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 2,
+          "range": "",
+          "damage": "1d8",
+          "mod": 4
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Rime Walker",
+      "description": "Human-shaped beings formed from black space ice. Their eyes are two flickering, white lights.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Immune to cold."
+        },
+        {
+          "name": "Ice Aura",
+          "description": "Enemies within near of rime walker DC 12 CON at start of turn or lose action."
+        }
+      ],
+      "stats": {
+        "movement": "near (fly)",
+        "str_mod": 4,
+        "dex_mod": 4,
+        "con_mod": 3,
+        "int_mod": 2,
+        "wis_mod": 2,
+        "cha_mod": 2
+      },
+      "armorClass": 16,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "4 claw +8 (1d12)",
+      "attacks": [
+        {
+          "name": "claw",
+          "qty": 4,
+          "range": "",
+          "damage": "1d12",
+          "mod": 8
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Owlbear",
+      "description": "Cantankerous bears with owl eyes, beaks, and feathers.",
+      "actions": [
+        {
+          "name": "Crush",
+          "description": "Deals an extra die of damage if it hits the same target with both claws."
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 4,
+        "dex_mod": 1,
+        "con_mod": 3,
+        "int_mod": -2,
+        "wis_mod": 2,
+        "cha_mod": -3
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 claw +5 (1d10)",
+      "attacks": [
+        {
+          "name": "claw",
+          "qty": 2,
+          "range": "",
+          "damage": "1d10",
+          "mod": 5
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Panther",
+      "description": "Supple large cats with blue-black fur. Stealthy hunters.",
+      "actions": [],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": 3,
+        "dex_mod": 4,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 1,
+        "cha_mod": -3
+      },
+      "armorClass": 14,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 rend +3 (1d6)",
+      "attacks": [
+        {
+          "name": "rend",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 3
+        }
+      ],
+      "alignment": "Neutral",
+      "level": 10
+    },
+    {
+      "name": "Peasant",
+      "description": "A commoner in worn clothes.",
+      "actions": [],
+      "stats": {
+        "movement": "near",
+        "str_mod": 0,
+        "dex_mod": 0,
+        "con_mod": 0,
+        "int_mod": 0,
+        "wis_mod": 0,
+        "cha_mod": 0
+      },
+      "armorClass": 10,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 club +0 (1d4)",
+      "attacks": [
+        {
+          "name": "club",
+          "qty": 1,
+          "range": "",
+          "damage": "1d4"
+        }
+      ],
+      "alignment": "Lawful",
+      "level": 10
+    },
+    {
+      "name": "Pegasus",
+      "description": "Winged horses with noble bearings and pearly white coats.",
+      "actions": [],
+      "stats": {
+        "movement": "double near (fly)",
+        "str_mod": 3,
+        "dex_mod": 2,
+        "con_mod": 2,
+        "int_mod": -3,
+        "wis_mod": 1,
+        "cha_mod": 0
+      },
+      "armorClass": 12,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 hooves +3 (1d6)",
+      "attacks": [
+        {
+          "name": "hooves",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 3
+        }
+      ],
+      "alignment": "Neutral",
+      "level": 10
+    },
+    {
+      "name": "Phoenix",
+      "description": "Huge, soaring eagles made of searing flames. Intelligent and imbued with immortal magic.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Immune to fire."
+        },
+        {
+          "name": "Explosion",
+          "description": "Upon death, creatures within double near of phoenix DC 18 DEX or 10d6 damage."
+        },
+        {
+          "name": "Heat Aura",
+          "description": "Creatures within near of phoenix at start of turn DC 15"
+        },
+        {
+          "name": "Rebirth",
+          "description": "A red-hot egg remains after death. Phoenix hatches from it in 1d4 days."
+        }
+      ],
+      "stats": {
+        "movement": "double near (fly)",
+        "str_mod": 3,
+        "dex_mod": 4,
+        "con_mod": 2,
+        "int_mod": 3,
+        "wis_mod": 3,
+        "cha_mod": 3
+      },
+      "armorClass": 16,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "4 rend +8 (2d12)",
+      "attacks": [
+        {
+          "name": "rend",
+          "qty": 4,
+          "range": "",
+          "damage": "2d12",
+          "mod": 8
+        }
+      ],
+      "alignment": "Lawful"
+    },
+    {
+      "name": "Piranha, Swarm",
+      "description": "A school of flat, silvery fish with vicious fangs.",
+      "actions": [
+        {
+          "name": "Savage",
+          "description": "ADV on attacks against creatures below half their HP."
+        }
+      ],
+      "stats": {
+        "movement": "near (swim)",
+        "str_mod": -2,
+        "dex_mod": 2,
+        "con_mod": 0,
+        "int_mod": -3,
+        "wis_mod": 0,
+        "cha_mod": -3
+      },
+      "armorClass": 12,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 bite +2 (1d6)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 2
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Pirate",
+      "description": "Seafaring scoundrels who live to steal and hoard treasure.",
+      "actions": [],
+      "stats": {
+        "movement": "near",
+        "str_mod": 1,
+        "dex_mod": 1,
+        "con_mod": 0,
+        "int_mod": 0,
+        "wis_mod": 0,
+        "cha_mod": 0
+      },
+      "armorClass": 12,
+      "armor": "leather",
+      "maxHitPoints": 55,
+      "attackText": "1 cutlass +1 (1d6) or 1 dagger (close/ near) +1 (1d4)",
+      "attacks": [
+        {
+          "name": "cutlass",
+          "qty": 1,
+          "range": "",
+          "damage": "1d6",
+          "mod": 1
+        },
+        {
+          "name": "dagger",
+          "qty": 1,
+          "range": "close/ near",
+          "damage": "1d4",
+          "mod": 1
+        }
+      ],
+      "alignment": "Chaotic",
+      "level": 10
+    },
+    {
+      "name": "Priest",
+      "description": "A respected member of a clergy who leads holy rituals and rites.",
+      "actions": [
+        {
+          "name": "Anoint (WIS Spell)",
+          "description": "DC 12. Close."
+        },
+        {
+          "name": "Healing Touch (WIS Spell)",
+          "description": "DC 11. Heal one creature within close for 2d4 HP."
+        },
+        {
+          "name": "Holy Flame (WIS Spell)",
+          "description": "DC 13."
+        },
+        {
+          "name": "Self",
+          "description": "Weapons ignite in magic flames and deal an additional 1d6 damage for 5 rounds."
+        },
+        {
+          "name": "Rebuke (WIS Spell)",
+          "description": "DC 13."
+        },
+        {
+          "name": "Focus",
+          "description": "Chaotic creatures cannot attack priest or come within near range for duration."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 1,
+        "dex_mod": 0,
+        "con_mod": 1,
+        "int_mod": 0,
+        "wis_mod": 2,
+        "cha_mod": 1
+      },
+      "armorClass": 15,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 mace +3 (1d6) or 1 spell +3",
+      "attacks": [
+        {
+          "name": "mace",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 3
+        },
+        {
+          "name": "spell",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "mod": 3
+        }
+      ],
+      "alignment": "Lawful"
+    },
+    {
+      "name": "Purple Worm",
+      "description": "A massive worm as tall as a castle keep. Has a rotating maw and is covered in purple chitin.",
+      "actions": [
+        {
+          "name": "Poison",
+          "description": "DC 15 CON or go to 0 HP."
+        },
+        {
+          "name": "Swallow",
+          "description": "On a natural attack roll of 18-20, target is swallowed."
+        }
+      ],
+      "stats": {
+        "movement": "double near (burrow)",
+        "str_mod": 5,
+        "dex_mod": 1,
+        "con_mod": 3,
+        "int_mod": -3,
+        "wis_mod": 1,
+        "cha_mod": -3
+      },
+      "armorClass": 18,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 bite +9 (2d12 + swallow) and 1 sting +9 (1d10 + poison)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 2,
+          "range": "",
+          "damage": "2d12",
+          "mod": 9
+        },
+        {
+          "name": "sting",
+          "qty": 1,
+          "range": "",
+          "damage": "1d10",
+          "mod": 9
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Rakshasa",
+      "description": "Demonic illusionists whose true form is of a humanlike great cat with backwards hands.",
+      "actions": [
+        {
+          "name": "Impervious",
+          "description": "Only damaged by magical sources. Immune to hostile spells of 3rd tier or lower."
+        },
+        {
+          "name": "Mesmerism",
+          "description": "Can read the minds of all creatures within near. Can instantly take on the illusory appearance of any humanoid."
+        },
+        {
+          "name": "Weakness",
+          "description": "A crossbow bolt under the effects of the holy weapon spell kills the rakshasa."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 1,
+        "dex_mod": 3,
+        "con_mod": 3,
+        "int_mod": 3,
+        "wis_mod": 3,
+        "cha_mod": 4
+      },
+      "armorClass": 16,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 claw +6 (1d8)",
+      "attacks": [
+        {
+          "name": "claw",
+          "qty": 2,
+          "range": "",
+          "damage": "1d8",
+          "mod": 6
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "Rat",
+      "description": "Rangy, plague-carrying rodents that infest underground places.",
+      "actions": [
+        {
+          "name": "Disease",
+          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": -3,
+        "dex_mod": 0,
+        "con_mod": 1,
+        "int_mod": -3,
+        "wis_mod": 1,
+        "cha_mod": -3
+      },
+      "armorClass": 10,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 bite +0 (1 + disease)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 1,
+          "range": "",
+          "damage": ""
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Rat, Giant",
+      "description": "Cunning rats as large as cats. Mangy fur and wormlike tails.",
+      "actions": [
+        {
+          "name": "Disease",
+          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": -2,
+        "dex_mod": 1,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 1,
+        "cha_mod": -2
+      },
+      "armorClass": 11,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 bite +1 (1d4 + disease)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 1,
+          "range": "",
+          "damage": "1d4",
+          "mod": 1
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Rat, Dire",
+      "description": "Child-sized, savage rats bristling with bony face and spine ridges.",
+      "actions": [
+        {
+          "name": "Disease",
+          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 1,
+        "dex_mod": 2,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 1,
+        "cha_mod": -2
+      },
+      "armorClass": 12,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "1 bite +2 (1d6 + disease)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 1,
+          "range": "",
+          "damage": "1d6",
+          "mod": 2
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Rat, Swarm",
+      "description": "A screeching tidal wave of clawing and biting rats.",
+      "actions": [
+        {
+          "name": "Disease",
+          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill)."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": -3,
+        "dex_mod": 0,
+        "con_mod": 1,
+        "int_mod": -3,
+        "wis_mod": 1,
+        "cha_mod": -3
+      },
+      "armorClass": 10,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "4 bite +0 (1 + disease)",
+      "attacks": [
+        {
+          "name": "bite",
+          "qty": 4,
+          "range": "",
+          "damage": ""
+        }
+      ],
+      "alignment": "Neutral"
+    },
+    {
+      "name": "Rathgamnon",
+      "description": "A pearl-white lion with feathered wings that stands twenty feet tall. Rathgamnon is Madeera the Covenant's mightiest servant; his blank eyes see far into the depths of time and space. He spends all eternity watching the whirl of the stars from the highest mountain in the realm of mortals, waiting for the celestial alignments that prophesy epochs of weal and woe, titanic changes to the balance of power in the cosmos, or threats to the laws of reality itself.",
+      "actions": [
+        {
+          "name": "Legendary",
+          "description": "Only damaged by magical sources. Hostile spells targeting Rathgamnon are DC 18 to cast."
+        },
+        {
+          "name": "Roar",
+          "description": "In place of attacks, all creatures who can hear within far DC 18"
+        },
+        {
+          "name": "Abjure (WIS Spell)",
+          "description": "DC 13. Self. End any hostile magical effects affecting Rathgamnon."
+        },
+        {
+          "name": "Abolish (WIS Spell)",
+          "description": "DC 13. One target in far takes 5d8 damage."
+        },
+        {
+          "name": "Anchor (WIS Spell)",
+          "description": "DC 14. One target in far DC 18 STR or bound and anchored by chains of golden runes for 1d4 rounds."
+        },
+        {
+          "name": "Gate (WIS Spell)",
+          "description": "DC 14. Open a portal at a point within near to another location on any plane. Lasts 1d6 rounds or until dismissed."
+        },
+        {
+          "name": "Portent (WIS Spell)",
+          "description": "DC 14. Lasts 2d4 rounds. One target in near has advantage or disadvantage on all attack rolls and checks."
+        },
+        {
+          "name": "Time Stop (WIS Spell)",
+          "description": "DC 15. Self. Time freezes for everyone except"
+        },
+        {
+          "name": "Rathgamnon for 1d4 rounds",
+          "description": "Everything that occurs during the time freeze happens simultaneously when the spell ends. \"The stars told me of your arrival here many eons ago, long before the first of your people walked the earth.\" -Rathgamnon"
+        }
+      ],
+      "stats": {
+        "movement": "double near (fly)",
+        "str_mod": 5,
+        "dex_mod": 3,
+        "con_mod": 4,
+        "int_mod": 5,
+        "wis_mod": 6,
+        "cha_mod": 5
+      },
+      "armorClass": 17,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 rend (near) +9 (2d10) and 2 spell +8",
+      "attacks": [
+        {
+          "name": "rend",
+          "qty": 2,
+          "range": "near",
+          "damage": "2d10",
+          "mod": 9
+        },
+        {
+          "name": "spell",
+          "qty": 2,
+          "range": "",
+          "damage": "",
+          "mod": 8
+        }
+      ],
+      "alignment": "Lawful"
     },
     {
       "name": "Reaver",
@@ -6018,7 +7268,7 @@
         },
         {
           "name": "Tendrils",
-          "description": "Four total. AC 18 each. 4+ damage to one severs it. 249"
+          "description": "Four total. AC 18 each. 4+ damage to one severs it."
         }
       ],
       "stats": {
@@ -6223,7 +7473,7 @@
       "actions": [
         {
           "name": "Scream",
-          "description": "Creatures who hear in double near DC 12 CHA or paralyzed for 1d4 rounds. 250"
+          "description": "Creatures who hear in double near DC 12 CHA or paralyzed for 1d4 rounds."
         }
       ],
       "stats": {
@@ -6339,7 +7589,7 @@
       "actions": [
         {
           "name": "Drain",
-          "description": "Target takes 1 STR damage. At 0 STR, target dies and becomes a shadow. 251"
+          "description": "Target takes 1 STR damage. At 0 STR, target dies and becomes a shadow."
         }
       ],
       "stats": {
@@ -6569,7 +7819,8 @@
           "mod": 3
         }
       ],
-      "alignment": "Neutral"
+      "alignment": "Neutral",
+      "level": 10
     },
     {
       "name": "Snake, Giant",
@@ -6709,7 +7960,8 @@
           "mod": 1
         }
       ],
-      "alignment": "Lawful"
+      "alignment": "Lawful",
+      "level": 10
     },
     {
       "name": "Sphinx",
@@ -6741,7 +7993,7 @@
         },
         {
           "name": "Unmake (WIS Spell)",
-          "description": "DC 13. One target in far takes 3d8 damage. 254"
+          "description": "DC 13. One target in far takes 3d8 damage."
         }
       ],
       "stats": {
@@ -6917,7 +8169,7 @@
         },
         {
           "name": "Strangle",
-          "description": "Deals x2 damage against surprised creatures. 255"
+          "description": "Deals x2 damage against surprised creatures."
         },
         {
           "name": "A floating mass of rubbery skin crusted with barnacles",
@@ -6930,7 +8182,36 @@
         {
           "name": "Eyestalk Ray",
           "description": "Each ray can shoot once per round and target one creature or an object up to 1,000 pounds (up to four on same target). 1. Charm. DC 15 CHA or become ally for 1d4 rounds. 2. Hold. DC 15 STR or paralyzed 1d4 rounds. 3. Sleep. DC 15 WIS or asleep 1d4 rounds. 4. Polymorph. DC 15 INT or turned into vermin for 1d4 rounds. 5. Cancel. DC 15 DEX or all magical effects on target end. 6. Confusion. DC 15 WIS or attack a random ally within near. 7. Telekinesis. DC 15 STR or hover target up to double near. 8. Disintegrate. DC 15 DEX or 5d8 damage (object destroyed). 9. Petrify. DC 15 CON or petrified. 10. Death. DC 15 CON or drop to 0 HP with a death timer of 1."
-        },
+        }
+      ],
+      "stats": {
+        "movement": "near (climb)",
+        "str_mod": -2,
+        "dex_mod": 2,
+        "con_mod": 1,
+        "int_mod": -2,
+        "wis_mod": 4,
+        "cha_mod": -2
+      },
+      "armorClass": 12,
+      "armor": "",
+      "maxHitPoints": 55,
+      "attackText": "2 claws +2 (1d6)",
+      "attacks": [
+        {
+          "name": "claws",
+          "qty": 2,
+          "range": "",
+          "damage": "1d6",
+          "mod": 2
+        }
+      ],
+      "alignment": "Chaotic"
+    },
+    {
+      "name": "The Tarrasque",
+      "description": "A colossal, four-legged reptile with crocodilian jaws, amber scales, and a diamond-hard, spiked carapace. It towers overhead like a mountain, able to swallow entire villages in one gulp. The tarrasque hibernates deep in the earth or at the bottom of the sea for centuries, only awakening long enough to fill its vast belly in an indiscriminate rampage of terror and destruction. There is only one tarrasque, and it is the most dreaded creature to walk the earth. \"RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!\" -The Tarrasque",
+      "actions": [
         {
           "name": "Legendary",
           "description": "Only damaged by magical sources. Hostile spells targeting the tarrasque are DC 18 to cast."
@@ -6965,34 +8246,96 @@
         }
       ],
       "stats": {
-        "movement": "near (climb)",
-        "str_mod": -2,
+        "movement": "triple near (burrow",
+        "str_mod": 7,
         "dex_mod": 2,
-        "con_mod": 1,
-        "int_mod": -2,
-        "wis_mod": 4,
-        "cha_mod": -2
+        "con_mod": 5,
+        "int_mod": -3,
+        "wis_mod": 1,
+        "cha_mod": -3
       },
-      "armorClass": 12,
+      "armorClass": 22,
       "armor": "",
       "maxHitPoints": 55,
-      "attackText": "2 claws +2 (1d6)",
+      "attackText": "4 thrash (near) +13 (3d10 + sever) and 1 bite (near) +13 (5d10 + sever + swallow)",
       "attacks": [
         {
-          "name": "claws",
-          "qty": 2,
-          "range": "",
-          "damage": "1d6",
-          "mod": 2
+          "name": "thrash",
+          "qty": 4,
+          "range": "near",
+          "damage": "3d10",
+          "mod": 13
+        },
+        {
+          "name": "bite",
+          "qty": 1,
+          "range": "near",
+          "damage": "5d10",
+          "mod": 13
         }
       ],
-      "alignment": "Chaotic"
+      "alignment": "Neutral"
     },
     {
-      "name": "The Tarrasque",
-      "description": "“RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!\\" -The Tarrasque 258 A cheerful merchant who appears to be a hale, middle-aged human man with a handlebar mustache. He wears a white shirt, breeches, and leather apron, and he hauls a towering backpack bursting at the seams. Few know the merchant's true nature and origins, though some theorize he is an immortal being or a god (they are not entirely incorrect). The Wandering Merchant always has something useful, far-flung, or incredible to sell at a reasonable price, and there's no telling when or where he'll show up next...","actions":[{"name":"Legendary","description":"Only damaged by magical sources. Hostile spells targeting The Wandering Merchant are DC 18 to cast."},{"name":"Amulet of Rahm-Hotep","description":"In place of attacks, teleport to a random location in the multiverse."},{"name":"Bottomless Bag","description":"Contains 200 gear slots in magical sub-pockets."},{"name":"Weighs as much as a normal backpack","description":"The Wandering Merchant can summon it to himself from anywhere by snapping his fingers."},{"name":"Dice of Truth","description":"A set of three six-sided dice whose rolls cannot be magically or mundanely altered in any way."},{"name":"Lop","description":"On a natural attack roll of 18-20, behead the target."},{"name":"Reckoning","description":"Any creature who steals from The Wandering Merchant develops a curse. Over the next 2d8 days, that creature turns into a cockatrice. This curse can only be lifted by a wish spell or by returning the stolen goods."},{"name":"Strange Lands","description":"The Wandering Merchant does not suffer any ill effects from the natural environment he does not wish to suffer."}],"stats":{"movement":"near","str_mod":3,"dex_mod":3,"con_mod":4,"int_mod":3,"wis_mod":4,"cha_mod":5},"armorClass":16,"armor":"mithral chainmail","maxHitPoints":55,"attackText":"4 +3 vorpal bastard sword +9 (1d10 + lop)","attacks":[{"name":"+3 vorpal bastard sword","qty":4,"range":"","damage":"1d10","mod":9}],"alignment":"Lawful"},{"name":"The Wandering Merchant","description":"“Fancy meeting you here, at the bottom of a pit trap! I just so happen to have this lovely rope for sale...\\" -The Wandering Merchant 259",
-      "actions": [],
-      "stats": {}
+      "name": "The Wandering Merchant",
+      "description": "A cheerful merchant who appears to be a hale, middle-aged human man with a handlebar mustache. He wears a white shirt, breeches, and leather apron, and he hauls a towering backpack bursting at the seams. Few know the merchant's true nature and origins, though some theorize he is an immortal being or a god (they are not entirely incorrect). The Wandering Merchant always has something useful, far-flung, or incredible to sell at a reasonable price, and there's no telling when or where he'll show up next... \"Fancy meeting you here, at the bottom of a pit trap! I just so happen to have this lovely rope for sale...\" -The Wandering Merchant",
+      "actions": [
+        {
+          "name": "Legendary",
+          "description": "Only damaged by magical sources. Hostile spells targeting The Wandering Merchant are DC 18 to cast."
+        },
+        {
+          "name": "Amulet of Rahm-Hotep",
+          "description": "In place of attacks, teleport to a random location in the multiverse."
+        },
+        {
+          "name": "Bottomless Bag",
+          "description": "Contains 200 gear slots in magical sub-pockets."
+        },
+        {
+          "name": "Weighs as much as a normal backpack",
+          "description": "The Wandering Merchant can summon it to himself from anywhere by snapping his fingers."
+        },
+        {
+          "name": "Dice of Truth",
+          "description": "A set of three six-sided dice whose rolls cannot be magically or mundanely altered in any way."
+        },
+        {
+          "name": "Lop",
+          "description": "On a natural attack roll of 18-20, behead the target."
+        },
+        {
+          "name": "Reckoning",
+          "description": "Any creature who steals from The Wandering Merchant develops a curse. Over the next 2d8 days, that creature turns into a cockatrice. This curse can only be lifted by a wish spell or by returning the stolen goods."
+        },
+        {
+          "name": "Strange Lands",
+          "description": "The Wandering Merchant does not suffer any ill effects from the natural environment he does not wish to suffer."
+        }
+      ],
+      "stats": {
+        "movement": "near",
+        "str_mod": 3,
+        "dex_mod": 3,
+        "con_mod": 4,
+        "int_mod": 3,
+        "wis_mod": 4,
+        "cha_mod": 5
+      },
+      "armorClass": 16,
+      "armor": "mithral chainmail",
+      "maxHitPoints": 55,
+      "attackText": "4 +3 vorpal bastard sword +9 (1d10 + lop)",
+      "attacks": [
+        {
+          "name": "+3 vorpal bastard sword",
+          "qty": 4,
+          "range": "",
+          "damage": "1d10",
+          "mod": 9
+        }
+      ],
+      "alignment": "Lawful"
     },
     {
       "name": "Thief",
@@ -7112,7 +8455,7 @@
       "actions": [
         {
           "name": "Regenerate",
-          "description": "Regains 2d6 HP on its turn unless its wounds are cauterized with fire or acid. 260"
+          "description": "Regains 2d6 HP on its turn unless its wounds are cauterized with fire or acid."
         }
       ],
       "stats": {
@@ -7245,7 +8588,7 @@
         },
         {
           "name": "Vampire",
-          "description": "Must sleep in a coffin daily or loses 2d6 HP each day that can't be healed until resting in coffin. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart with a wooden stake while at 0 HP. 261"
+          "description": "Must sleep in a coffin daily or loses 2d6 HP each day that can't be healed until resting in coffin. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart with a wooden stake while at 0 HP."
         }
       ],
       "stats": {
@@ -7344,7 +8687,8 @@
           "damage": "1d4"
         }
       ],
-      "alignment": "Neutral"
+      "alignment": "Neutral",
+      "level": 10
     },
     {
       "name": "Viperians",
@@ -7450,7 +8794,7 @@
         },
         {
           "name": "Focus",
-          "description": "All enemies within near of viperian wizard have DISADV on spellcasting checks for the duration. 263"
+          "description": "All enemies within near of viperian wizard have DISADV on spellcasting checks for the duration."
         }
       ],
       "stats": {
@@ -7637,10 +8981,6 @@
           "description": "1d4 CON damage."
         },
         {
-          "name": "Death if reduced to 0 CON",
-          "description": " 264"
-        },
-        {
           "name": "Life Drain",
           "description": "1d4 CON damage."
         }
@@ -7753,10 +9093,6 @@
         {
           "name": "Frost Breath",
           "description": "Fills a near-sized cube extending from winter wolf. DC 15 DEX or 3d8 damage."
-        },
-        {
-          "name": "Cannot use again for 1d4 rounds",
-          "description": " 265"
         }
       ],
       "stats": {
