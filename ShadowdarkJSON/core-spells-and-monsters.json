@@ -638,7 +638,7 @@
       "armorClass": 15,
       "armor": "",
       "maxHitPoints": 55,
-      "attackText": "2 flaming warhammer +3 (1d10",
+      "attackText": "2 flaming warhammer +3 (1d10, ignites flammables)",
       "attacks": [
         {
           "name": "Flaming Warhammer",
@@ -646,7 +646,7 @@
           "range": "",
           "damage": "1d10",
           "mod": 3,
-          "effect": ""
+          "effect": "ignites flammables"
         }
       ],
       "movement": "near",
