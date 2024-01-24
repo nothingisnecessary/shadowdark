@@ -1,28 +1,18 @@
 // convert string to title case
-function titleCase(str) {
+let titleCase = function(str) {
   return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
 
-function parseMonsters(text) {
-  const alignments = {
-    "C": "Chaotic",
-    "L": "Lawful",
-    "N": "Neutral"
-  };
-  const atkRegex = /([\+|\-]\d+)/;
-  const dmgRegex = /\d+d\d+[\s+\w]*/g;
-  const rngRegex = /\((\w+)\)/;
-//  const attackRegex = /^(?<qty>\d+(d\d+)?)\s*(?<name>(\+\d+)?[\w\s]*)\b(\s*)?(\((?<rng>([\w\s/]+))\)\s*)?(?<mod>[\+|\-]\d+)?(\s*)?[\(]?(?<dmg>\d+d\d+(\s\+\s\d+)?)?(\s*)?[\+,]?(\s)?(?<effect>[^\)][\w\s\+]*)?\)?/g;
-//const attackRegex = new RegExp(/^(?<qty>\\d+(d\\d+)?)\\s*(?<name>(\\+\\d+)?[\\w\\s]*)\\b(\\s*)?(\\((?<rng>([\\w\\s/]+))\\)\\s*)?(?<mod>[\\+|\\-]\\d+)?(\\s*)?[\\(]?(?<dmg>\\d+d\\d+(\\s\\+\\s\\d+)?)?(\\s*)?[\\+,]?(\\s)?(?<effect>[^\\)][\\w\\s\\+]*)?\\)?/g);
-
+// parse monster from copy-and-paste book format to shadowdarklings-style format
+let parseMonsters = function(text) {
   const entries = [];
   let entry = [];
   let lines = text.split(/\n/);
   for (let l = 0; l < lines.length; ++l) {
-    let line = lines[l]; ///.trim();
-    if (!line?.length) continue; // skip dem empty lines
+    let line = lines[l];
+    if (!line?.length) continue; // skip empty lines
 
     // Find the first line containing the monster name
     let isName = /^[A-Z][A-Z\s,]*[A-Z]$/.test(line);
@@ -36,13 +26,13 @@ function parseMonsters(text) {
 
   const monsters = [];
   let monster;
-  let acLine = 0;
+  let acIndex = 0;
 
   entries.forEach(entry => {
     lines = entry.split(/\n/);
     for (let l = 0; l < lines.length; ++l) {
       let line = lines[l].trim();
-      if (!line?.length) continue; // skip dem empty lines
+      if (!line?.length) continue; // skip empty lines
 
       // Find the first line containing the monster name
       let isName = /^[A-Z][A-Z\s,]*[A-Z]$/.test(line);
@@ -54,85 +44,100 @@ function parseMonsters(text) {
           actions: [],
           stats: {}
         };
-        monsters.push(monster);
-        acLine = 0;
+        acIndex = 0;
         continue;
       }
 
       // Assume AC is first stat. Everything between name and AC is Description text.
       // Hopefully there is no monster with "AC " in the description... shrug..
-      if (acLine === 0) {
-        if (/^AC \d+/.test(line)) {
-          acLine = l;
-        } else {
+      if (/^AC \d+/.test(line)) {
+        acIndex = l;
+        break; // found start of stat block; exit loop
+      } else {
           if (monster.description.length) monster.description += " ";
           monster.description += line;
+      }
+    }
+
+    // push monster only if found the stats block
+    if (acIndex > 0)
+    {
+      monsters.push(monster);
+    }
+    else {
+      console.log(`Unable to parse stats for ${monster.name}`);
+      return; // parse next monster, skip forEach iteration
+    }
+
+    // stats come before actions - first stat is "AC" (armor class) and final stat is "LV" (level)
+    // attacks are included in the stats block using "ATK"
+    const statsAndActionsLines = lines.slice(acIndex);
+
+    // find beginning of actions text
+    const actionsIndex = statsAndActionsLines.findIndex(o=>/[Ll][Vv]\s(\d+|\*)$/.test(o)) + 1;
+    const actionsLines = statsAndActionsLines.slice(actionsIndex);
+    monster.actions = parseActions(actionsLines);
+
+    // slice out and parse stats from between monster description and actions
+    const statsLines = statsAndActionsLines.slice(0, actionsIndex).map(o=>o.trim()).join(" ").split(/,/);
+    for (let i = 0; i < statsLines.length; i++) {
+      const statsLine = statsLines[i].trim(); // Trim leading and trailing whitespace for copy-paste issues	
+      if (!statsLine?.length) continue; // skip empty lines
+      try {
+        if (!monster.armorClass && statsLine.startsWith('AC ')) {
+          const [, AC, armor] = statsLine.match(/AC (\d+)(?: \(([\w\s]+)\))?/);
+          monster.armorClass = +AC;
+          monster.armor = armor || "";
+        } else if (!monster.maxHitPoints && statsLine.startsWith('HP ')) {
+          const [, HP] = statsLine.match(/HP (\d+)/);
+          monster.maxHitPoints = parseInt(HP, 10) || monster.name==="Hydra" ? 55 : 0; // hydra heads special case (5 heads)
+        } else if (!monster.attacks && statsLine.startsWith('ATK ')) {
+          const [, attackText] = statsLine.match(/ATK (.+)/);
+          const attackStrings = attackText.split(/\bor\b|\band\b/).map(s => s.trim());
+          const attacks = attackStrings.map(s => 
+            /^(?<qty>\d+(d\d+)?)\s*(?<name>(\+\d+)?[\w\s]*)\b(\s*)?(\((?<rng>([\w\s/]+))\)\s*)?(?<mod>[\+|\-]\d+)?(\s*)?[\(]?(?<dmg>\d+d\d+(\s\+\s\d+)?)?(\s*)?[\+,]?(\s)?(?<effect>[^\)][\w\s\+]*)?\)?/g
+            .exec(s)?.groups).filter(s=>s!==undefined);
+          monster.attackText = attackText;
+          monster.attacks = attacks.map(attack => {
+            return {
+              name: titleCase(attack.name || ""),
+              qty: parseInt(attack.qty, 10),
+              range: attack.rng || "",
+              damage: attack.dmg || "",
+              mod: parseInt(attack.mod, 10) || undefined,
+              effect: attack.effect || ""
+            };
+          });
+        } else if (!monster.movement && /^[Mm][Vv]\s[\(\s\w/]*[\w\)]$/.test(statsLine)) {
+          monster.movement = statsLine.substring(3);
+        } else if (!monster.stats.str_mod && /^[Ss]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.str_mod = parseInt(statsLine.substring(2), 10) || 0;
+          monster.stats.STR = Math.max(1, 10 + 2 * monster.stats.str_mod); // derive core stat
+        } else if (!monster.stats.dex_mod && /^[Dd]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.dex_mod = parseInt(statsLine.substring(2), 10) || 0;
+          monster.stats.DEX = Math.max(1, 10 + 2 * monster.stats.dex_mod); // derive core stat
+        } else if (!monster.stats.con_mod && /^[Cc]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.con_mod = parseInt(statsLine.substring(2), 10) || 0;
+          monster.stats.CON = Math.max(1, 10 + 2 * monster.stats.con_mod); // derive core stat
+        } else if (!monster.stats.int_mod && /^[Ii]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.int_mod = parseInt(statsLine.substring(2), 10) || 0;
+          monster.stats.INT = Math.max(1, 10 + 2 * monster.stats.int_mod); // derive core stat
+        } else if (!monster.stats.wis_mod && /^[Ww]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.wis_mod = parseInt(statsLine.substring(2), 10) || 0;
+          monster.stats.WIS = Math.max(1, 10 + 2 * monster.stats.wis_mod); // derive core stat
+        } else if (!monster.stats.cha_mod && /^[Cc][Hh]\s[\+\-]+[\d]+$/.test(statsLine)) {
+          monster.stats.cha_mod = parseInt(statsLine.substring(3), 10) || 0;
+          monster.stats.CHA = Math.max(1, 10 + 2 * monster.stats.cha_mod); // derive core stat
+        } else if (!monster.alignment && /^[Aa][Ll]\s+[\(\w\s]*[\w\)]$/.test(statsLine)) {
+          monster.alignment = alignments[statsLine.substring(3)];
+        } else if (!monster.level && /^[Ll][Vv]\s(\*|\d+)$/.test(statsLine)) {
+          monster.level = parseInt(statsLine.substring(3), 10) || monster.name==="Hydra" ? 10 : 0; // hydra heads special case (5 heads)
+          break; // done getting stats - get attack text next loop
         }
       }
-
-      if (acLine === 0) continue;
-
-      // actions lines
-      if (!monster.actions?.length)
-      {
-        const actionsLines = lines.slice(acLine).slice(lines.slice(acLine).findIndex(o=>/[Ll][Vv]\s[\d+|\*]$/.test(o))+1);
-        monster.actions = parseActions(actionsLines);
-      }
-
-      // stat lines
-      const statsLines = lines.slice(acLine).map(o=>o.trim()).join(" ").split(/,/);
-      for (let i = 0; i < statsLines.length; i++) {
-        const statsLine = statsLines[i].trim(); // Trim leading and trailing whitespace for copy-paste issues	
-        if (!statsLine?.length) continue; // skip empty lines
-        try {
-          if (!monster.armorClass && statsLine.startsWith('AC ')) {
-            const [, AC, armor] = statsLine.match(/AC (\d+)(?: \(([\w\s]+)\))?/);
-            monster.armorClass = +AC;
-            monster.armor = armor || "";
-          } else if (!monster.maxHitPoints && statsLine.startsWith('HP ')) {
-            const [, HP] = statsLine.match(/HP (\d+)/);
-            monster.maxHitPoints = parseInt(HP, 10) || monster.name==="Hydra" ? 55 : 0; // hydra heads special case (5 heads)
-          } else if (!monster.attacks && statsLine.startsWith('ATK ')) {
-            const [, attackText] = statsLine.match(/ATK (.+)/);
-            const attackStrings = attackText.split(/\bor\b|\band\b/).map(s => s.trim());
-            const attacks = attackStrings.map(s => 
-              /^(?<qty>\d+(d\d+)?)\s*(?<name>(\+\d+)?[\w\s]*)\b(\s*)?(\((?<rng>([\w\s/]+))\)\s*)?(?<mod>[\+|\-]\d+)?(\s*)?[\(]?(?<dmg>\d+d\d+(\s\+\s\d+)?)?(\s*)?[\+,]?(\s)?(?<effect>[^\)][\w\s\+]*)?\)?/g
-              .exec(s)?.groups).filter(s=>s!==undefined);
-            monster.attackText = attackText;
-            monster.attacks = attacks.map(attack => {
-              return {
-                name: attack.name || "",
-                qty: parseInt(attack.qty, 10),
-                range: attack.rng || "",
-                damage: attack.dmg || "",
-                mod: parseInt(attack.mod, 10) || undefined
-              };
-            });
-          } else if (!monster.stats.movement && /^[Mm][Vv]\s[\(\s\w/]*[\w\)]$/.test(statsLine)) {
-            monster.stats.movement = statsLine.substring(3);
-          } else if (!monster.stats.str_mod && /^[Ss]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.str_mod = parseInt(statsLine.substring(2), 10) || 0;
-          } else if (!monster.stats.dex_mod && /^[Dd]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.dex_mod = parseInt(statsLine.substring(2), 10) || 0;
-          } else if (!monster.stats.con_mod && /^[Cc]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.con_mod = parseInt(statsLine.substring(2), 10) || 0;
-          } else if (!monster.stats.int_mod && /^[Ii]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.int_mod = parseInt(statsLine.substring(2), 10) || 0;
-          } else if (!monster.stats.wis_mod && /^[Ww]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.wis_mod = parseInt(statsLine.substring(2), 10) || 0;
-          } else if (!monster.stats.cha_mod && /^[Cc][Hh]\s[\+\-]*[\d]+$/.test(statsLine)) {
-            monster.stats.cha_mod = parseInt(statsLine.substring(3), 10) || 0;
-          } else if (!monster.alignment && /^[Aa][Ll]\s+[\(\w\s]*[\w\)]$/.test(statsLine)) {
-            monster.alignment = alignments[statsLine.substring(3)];
-          } else if (!monster.level && /^[Ll][Vv]\s+(\*|\d+)$/.test(statsLine)) {
-            monster.level = parseInt(statsLine.substring(3), 10) || monster.name==="Hydra" ? 10 : 0; // hydra heads special case (5 heads)
-            break; // done getting stats - get attack text next loop
-          }
-        }
-        catch (ex) { 
-          console.log(ex);
-          console.log(monster); 
-        }
+      catch (ex) { 
+        console.log(ex);
+        console.log(monster); 
       }
     }
   });
@@ -175,8 +180,7 @@ let parseActions = function(inputArray) {
     if (actionObject.name !== '' && actionObject.description !== '') {
       result.push(actionObject);
     }
-  }
-
+  }		
   return result;
 };
 
