@@ -29,6 +29,12 @@ input::placeholder {
   padding: 0;
 }
 
+.sheet-section {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 4px;
+}
+
 /* flex-box / responsive layout */
 
 /* rows */
@@ -62,16 +68,29 @@ input::placeholder {
   flex-basis: 100%;
 }
 
+.sd-core-stats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 150px;
+}
+
+.sd-core-stat {
+  box-sizing: border-box;
+  border: 0;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.sd-core-stat input[type=text] {
+  border-color: #999;
+}
+
 /* attempt to make sheet work on a phone */
 @media (max-width: 420px) {
   .sd-row {
     flex-direction: column;
   }
-}
-
-.sheet-sd .sheet-type-pc,
-.sheet-sd .sheet-type-npc {
-  margin-top: 1em;
 }
 
 /* (Shadow)dark mode ;) */
@@ -102,18 +121,19 @@ input::placeholder {
 }
 
 /* NPC description box */
-.sheet-toggle-npc-desc[value="0"]~.sheet-section-npc-desc {
+.sheet-toggle-npc-desc[value="0"]~.sd-npc-desc {
   display: none;
 }
-.sheet-toggle-npc-desc:not([value="0"])~.sheet-section-npc-desc {
+
+.sheet-toggle-npc-desc:not([value="0"])~.sd-npc-desc {
   display: block;
 }
 
-.sheet-sd .sheet-section-npc-desc textarea.sd-text {
+.sheet-sd .sd-npc-desc textarea.sd-text {
   height: 48px;
   display: block;
   max-width: 100%;
-  border: 1px dotted #ccc;
+  border: 1px dotted #999;
 }
 
 /* Options toggle */
@@ -129,9 +149,18 @@ input::placeholder {
   margin-bottom: 8px;
 }
 
+/* Pulp mode toggle */
+.sheet-toggle-pulp-mode[value="0"]~.sheet-pulp-mode {
+  display: none;
+}
+
+.sheet-toggle-pulp-mode:not([value="0"])~.sheet-pulp-mode {
+  display: inline-block;
+}
+
 /* headings */
 .sheet-sd h1 {
-  line-height: 18px;
+  line-height: 16px;
   font-size: 14px;
   background-color: rgba(11, 11, 11, 0.25);
   color: #fafafa;
@@ -217,35 +246,67 @@ span.sd-text {
   font-size: 10px;
   text-transform: uppercase;
   margin: 2px 0;
+  text-align: left;
+  vertical-align: bottom;
+  background-color: transparent;
+  background: none;
+  color: #111;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.charsheet .sheet-sd .sd-core-stat button[type=roll] {
+  display: block;
+}
+
+.sheet-darkmode .charsheet .sheet-sd button[type=roll] {
+  color: #ddd;
+}
+
+.charsheet .sheet-sd button[type=roll]:hover {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.sheet-darkmode .charsheet .sheet-sd button[type=roll]:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.charsheet .sheet-sd button[type=action] {
+  margin: 4px 0;
 }
 
 .sheet-darkmode .charsheet .sheet-sd button[type=action] {
   color: #333;
-}
-
-.charsheet .sheet-sd button[type=roll] {
-  min-width: 46px;
-  text-align: left;
-  vertical-align: bottom;
+  margin: 4px 0;
 }
 
 .charsheet .sheet-sd button[type=roll]::before {
-  font-family: "dicefontd20";
-  content: "t";
-  margin-right: 4px;
-  font-size: 16px;
-  line-height: 14px;
-  vertical-align: middle;
+  content: none;
 }
 
-.charsheet .sheet-sd .sheet-section-features button[type=roll]::before {
-  display: none;
+.charsheet .sheet-sd .sd-core-stat button[type=roll]::after {
+  font-family: "dicefontd20";
+  content: "t";
+  color: rgb(189, 40, 40);
+  font-size: 18px;
+  text-transform: none;
+  margin-left: 8px;
+  vertical-align: top;
 }
 
 /* labels */
 .sheet-sd label {
   font-family: arial;
   font-size: 0.8em;
+  line-height: 1.1em;
   font-weight: bold;
   margin: 0;
   white-space: nowrap;
@@ -254,15 +315,21 @@ span.sd-text {
   color: #666;
 }
 
+.sheet-form-group .trait-name,
+.sheet-form-group .trait-desc {
+  width: 100%;
+  min-width: 300px;
+}
+
 /* roll templates */
-.sheet-rolltemplates {
+.sheet-roll-templates {
   display: none;
 }
 
-.sheet-rolltemplate-traits .sheet-container,
-.sheet-rolltemplate-simple .sheet-container,
-.sheet-rolltemplate-dmg .sheet-container,
-.sheet-rolltemplate-atk .sheet-container {
+.sheet-rolltemplate-atk,
+.sheet-rolltemplate-dmg,
+.sheet-rolltemplate-simple,
+.sheet-rolltemplate-traits {
   color: black;
   border: 3px solid black;
   border-radius: 0;
@@ -270,10 +337,10 @@ span.sd-text {
   font-family: 'Nunito';
 }
 
-.sheet-rolltemplate-atk .sheet-container .sheet-char-name,
-.sheet-rolltemplate-dmg .sheet-container .sheet-char-name,
-.sheet-rolltemplate-simple .sheet-container .sheet-char-name,
-.sheet-rolltemplate-traits .sheet-container .sheet-char-name {
+.sheet-rolltemplate-atk .sheet-char-name,
+.sheet-rolltemplate-dmg .sheet-char-name,
+.sheet-rolltemplate-simple .sheet-char-name,
+.sheet-rolltemplate-traits .sheet-char-name {
   background-color: #333;
   text-align: center;
   color: #fff;
@@ -281,33 +348,47 @@ span.sd-text {
   padding: 2px 8px;
 }
 
-.sheet-rolltemplate-atk .sheet-container .sheet-label {
-  text-align: center;
+.sheet-rolltemplate-atk .sheet-info,
+.sheet-rolltemplate-dmg .sheet-info,
+.sheet-rolltemplate-simple .sheet-info,
+.sheet-rolltemplate-traits .sheet-info {
+  padding: 2px 8px;
+  color: #000;
 }
 
-.sheet-rolltemplate-atk .sheet-container .sheet-label a {
+.sheet-rolltemplate-atk .sheet-label,
+.sheet-rolltemplate-dmg .sheet-label,
+.sheet-rolltemplate-simple .sheet-label,
+.sheet-rolltemplate-traits .sheet-label {
+  text-align: center;
+  color: #000;
+}
+
+.sheet-rolltemplate-atk .sheet-label a {
   background-color: #fff;
-  color: black;
+  color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.sheet-rolltemplate-atk .sheet-container .sheet-label a:hover {
+.sheet-rolltemplate-atk .sheet-label a:hover {
   text-decoration: underline;
 }
 
-.sheet-rolltemplate-atk .sheet-trait-name,
-.sheet-rolltemplate-traits .sheet-trait-name,
-.sheet-rolltemplate-simple .sheet-roll-name {
+.sheet-rolltemplate-atk .sheet-roll-name,
+.sheet-rolltemplate-dmg .sheet-roll-name,
+.sheet-rolltemplate-simple .sheet-roll-name,
+.sheet-rolltemplate-traits .sheet-trait-name {
   text-align: center;
   color: #333;
-  padding: 2px 8px;
+  padding: 4px 8px;
   text-transform: uppercase;
 }
 
 .sheet-rolltemplate-traits .sheet-trait-desc {
   text-align: left;
   padding: 2px 8px;
+  color: #000;
 }
 
 .sheet-rolltemplate-atk .sheet-result,
@@ -316,12 +397,7 @@ span.sd-text {
   text-align: center;
   color: #333;
   padding: 2px 8px;
-}
 
-.sheet-form-group .trait-name,
-.sheet-form-group .trait-desc {
-  width: 100%;
-  min-width: 300px;
 }
 
 .sheet-rolltemplate-atk .sheet-result div,
@@ -330,83 +406,71 @@ span.sd-text {
   display: inline-block;
 }
 
+.sheet-rolltemplate-darkmode .inlinerollresult,
+.sheet-rolltemplate-darkmode .sheet-solo .inlinerollresult, 
+.sheet-rolltemplate-darkmode .sheet-damage .inlinerollresult, 
+.sheet-rolltemplate-darkmode .sheet-roll-used .inlinerollresult {
+  background-color: #111;
+  border: 4px solid #111;
+}
+
 .sheet-rolltemplate-atk .inlinerollresult,
 .sheet-rolltemplate-dmg .inlinerollresult,
 .sheet-rolltemplate-simple .inlinerollresult {
   font-size: 18px;
   line-height: 22px;
   background-color: #111;
-  border-color: #111;
   padding: 4px;
   color: #fff;
   display: inline-block;
   min-width: 22px;
   min-height: 22px;
   text-align: center;
-  border-width: 4px;
   vertical-align: middle;
+  border: 4px solid #111;
+}
+
+.sheet-rolltemplate-atk .inlinerollresult.importantroll,
+.sheet-rolltemplate-dmg .inlinerollresult.importantroll,
+.sheet-rolltemplate-simple .inlinerollresult.importantroll {
+  background-color: #111;
+  border: 4px solid #111;
 }
 
 .sheet-rolltemplate-atk .inlinerollresult.fullcrit,
 .sheet-rolltemplate-dmg .inlinerollresult.fullcrit,
 .sheet-rolltemplate-simple .inlinerollresult.fullcrit {
-  font-size: 18px;
-  line-height: 22px;
   background-color: #111;
-  border-color: #111;
-  padding: 4px;
-  color: #fff;
-  display: inline-block;
-  min-width: 22px;
-  min-height: 22px;
-  text-align: center;
-  border-width: 4px;
-  vertical-align: middle;
   color: rgb(175, 255, 175);
-  border-color: #111;
+  border: 4px solid #111;
 }
 
 .sheet-rolltemplate-atk .inlinerollresult.fullfail,
 .sheet-rolltemplate-dmg .inlinerollresult.fullfail,
 .sheet-rolltemplate-simple .inlinerollresult.fullfail {
-  font-size: 18px;
-  line-height: 22px;
-  background-color: #111;
-  border-color: #111;
-  padding: 4px;
-  color: #fff;
-  display: inline-block;
-  min-width: 22px;
-  min-height: 22px;
-  text-align: center;
-  border-width: 4px;
-  vertical-align: middle;
   color: #fff;
   background-color: rgb(138, 0, 0);
-  border-color: rgb(138, 0, 0);
+  border: 4px solid rgb(138, 0, 0);
 }
 
-.sheet-rolltemplate-atk .sheet-result .sheet-crit-success,
-.sheet-rolltemplate-atk .sheet-result .sheet-crit-fail,
-.sheet-rolltemplate-dmg .sheet-result .sheet-crit-success,
-.sheet-rolltemplate-dmg .sheet-result .sheet-crit-fail,
-.sheet-rolltemplate-simple .sheet-result .sheet-crit-success,
-.sheet-rolltemplate-simple .sheet-result .sheet-crit-fail {
+.sheet-rolltemplate-atk .sheet-crit-success,
+.sheet-rolltemplate-dmg .sheet-crit-success,
+.sheet-rolltemplate-simple .sheet-crit-success,
+.sheet-rolltemplate-atk .sheet-crit-fail,
+.sheet-rolltemplate-dmg .sheet-crit-fail,
+.sheet-rolltemplate-simple .sheet-crit-fail {
   display: block;
   font-family: arial;
   padding: 4px;
 }
 
 .sheet-rolltemplate-atk .sheet-roll-unused .inlinerollresult,
+.sheet-rolltemplate-dmg .sheet-roll-unused .inlinerollresult,
 .sheet-rolltemplate-simple .sheet-roll-unused .inlinerollresult {
   font-size: 15px;
   background-color: #eee;
   border-color: #fff;
   color: #666;
-}
-
-.sheet-rolltemplate-atk .sheet-info {
-  padding: 2px 4px;
 }
 
 /* PC sheets */
@@ -424,52 +488,25 @@ span.sd-text {
   font-size: 11px;
 }
 
-.sheet-sd .sheet-feature button {
-  background: none;
-  border: 0;
-  border-radius: 0;
-  border-left: 6px solid transparent;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-.sheet-sd .sheet-feature button:hover {
-  border-color: darkred;
-}
-
 .sheet-sd .sheet-feature .sheet-feature-name {
-  background: #fff;
-  color: #000;
-  border-radius: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 11px;
-  margin: 0;
   text-align: left;
-}
-
-.sheet-darkmode .sheet-sd .sheet-feature .sheet-feature-name {
-  background: transparent;
-  color: #fafafa;
 }
 
 .sheet-sd .sheet-feature .sheet-feature-details {
   text-align: left;
   white-space: normal;
-  color: black;
-  line-height: 1.3;
-  margin-top: 5px;
-  font-size: 9px;
+  line-height: 11px;
+  margin-top: 4px;
+  text-transform: none;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: normal;
 }
 
-.sheet-darkmode .sheet-sd .sheet-feature .sheet-feature-details {
-  color: #ddd;
-}
-
-.charsheet .sheet-sd button[type=roll] {
-  margin: 0;
-  padding-left: 4px;
-  max-width: 90%;
+.sheet-sd .sd-attacks button[type=roll] {
+  width: auto;
 }
 
 /* display multiple lines of test for feature desc */
@@ -518,7 +555,7 @@ span.sd-text {
 }
 
 .charsheet .sheet-sd .sheet-field-untoggle[value="1"]+* {
-  display: none !important;
+  display: none;
 }
 
 .sheet-sd .sheet-checkbox-cog:hover span {
@@ -601,11 +638,11 @@ span.sd-text {
 .sheet-sd .sheet-field-toggle[value=""]+*,
 .sheet-sd .sheet-field-toggle[value="0"]+*,
 .sheet-sd .sheet-field-toggle[value="hide"]+* {
-  display: none !important;
+  display: none;
 }
 
 .sheet-sd .sheet-field-untoggle[value="1"]+* {
-  display: none !important;
+  display: none;
 }
 
 .sheet-sd .repcontrol {
@@ -615,19 +652,23 @@ span.sd-text {
 .sheet-sd .repcontrol .btn {
   background: none;
   border-radius: 0;
-  border-color: #666;
-  border-width: 1px;
   font-size: 9px;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0 5px;
   margin-right: 4px;
   min-width: 32px;
+  background-color: transparent;
+  font-size: 11px;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid #666;
 }
 
 .sheet-darkmode .sheet-sd .repcontrol .btn {
-  background-color: #ccc;
-  color: #111;
-  border-color: #999;
+  color: #ccc;
+  border-color: #666;
 }
 
 .sheet-sd .repcontrol .btn.repcontrol_edit {
@@ -665,6 +706,52 @@ span.sd-text {
   display: none;
 }
 
+/* Radio buttons */
+label.sheet-radio {
+  margin: 0;
+  padding: 0;
+}
+
+.sheet-radio input[type=radio] {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sheet-radio span {
+  background-color: transparent;
+  padding: 2px 4px;
+  margin: 0 1px;
+  border: 1px solid #999;
+  color: #666;
+  cursor: pointer;
+  line-height: 11px;
+  min-width: 96px;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.sheet-darkmode .sheet-radio span {
+  color: #aaa;
+}
+
+.sheet-radio span:hover {
+  color: #000;
+  border-color: #333;
+}
+
+.sheet-darkmode .sheet-radio span:hover {
+  color: #fff;
+  border-color: #ccc;
+}
+
+.sheet-sd input[type=radio]:checked+span {
+  background-color: darkred;
+  color: #fff;
+}
+
 /* PC Stats */
 .sheet-sd .sheet-section-pc-stats .section-title {
   margin-right: 48px;
@@ -692,15 +779,6 @@ span.sd-text {
   border: 2px solid gold;
 }
 
-/* Roll Initiative button */
-.sheet-sd .pc-initiative {
-  align-items: left;
-}
-
-.sheet-sd .pc-initiative button {
-  width: 78px;
-}
-
 /* "readied" indicator for spells and attacks (you can temporarily lose spells on failed checks) */
 input[type=checkbox].atk-equipped {
   cursor: pointer;
@@ -721,13 +799,13 @@ input[type=checkbox].atk-equipped:checked {
 
 /* the fine print */
 .sheet-sd .legal {
-  font-size: 10px;
-  color: #ccc;
+  font-size: 11px;
+  color: #999;
 }
 
 .sheet-sd .legal .sd-credits {
   list-style: none;
-  font-size: 8px;
+  font-size: 11px;
   margin: 0;
 }
 
