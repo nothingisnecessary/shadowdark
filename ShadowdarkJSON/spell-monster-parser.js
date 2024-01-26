@@ -82,7 +82,7 @@ let parseMonsters = function(text) {
     const statsAndActionsLines = lines.slice(acIndex);
 
     // find beginning of actions text
-    const actionsIndex = statsAndActionsLines.findIndex(o=>/[Ll][Vv]\s(\d+|\*)(\/\d+)?$/.test(o)) + 1;
+    const actionsIndex = statsAndActionsLines.findIndex(o=>/(^\d+|[Ll][Vv]\s(\d+|\*)(\/\d+)?)$/.test(o)) + 1;
     const actionsLines = statsAndActionsLines.slice(actionsIndex);
     monster.actions = parseActions(actionsLines);
 
