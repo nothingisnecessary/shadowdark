@@ -478,21 +478,6 @@ near) +2 (1d6), MV near (swim), S
 C, LV 2
 Sunblind. Blinded in bright light.
 
-DEMONS
-Demons are Chaos incarnate, 
-born from the violent roil and 
-madness of the Dark Realms. 
-They watch from the liminal 
-space between worlds, hoping 
-to find a way into the Light 
-Realms to wreak destruction. 
-Most demons are utterly unique 
-in their powers and can take 
-any form. However, some lesser 
-demons share a common 
-appearance and set of abilities. 
-The most recognized of these 
-lesser demons are listed here. 
 DEMON, BALOR
 Colossal, horned bat-beasts 
 wreathed in the flames of hell 
@@ -564,21 +549,6 @@ near DC 12 WIS or DISADV on
 checks and attacks for 1d4 
 rounds.
 
-DEVILS
-Devils are the vile reflection of 
-angels, forming the unholy hosts 
-of chaotic gods and sovereign 
-archdevils. Their endless wars 
-rage across the blasted layers of 
-hell, fed by the constant influx of 
-evil souls that turn into devils. 
-Tiny imps and beautiful cubi
-secure humanoid souls with 
-promises of power or delight. 
-Barbed and horned devils
-are hell's cruel soldiers; darkly 
-angelic erinyes are its generals. 
-Wicked archdevils rule over all.
 ARCHDEVIL
 A stunningly beautiful, horned 
 human with burning, red eyes 
@@ -668,7 +638,6 @@ Charisma checks.
 Poison. DC 12 CON or fitful sleep 
 for 1d4 hours.
 
-DINOSAURS
 PTERODACTYL
 Long-beaked beasts with wide, 
 triangular wings. Large enough 
@@ -749,20 +718,6 @@ Telepathy. Can secretly hear
 the surface thoughts of all 
 humanoids within near.
 
-DRAGONS
-Dragons are winged, formidable 
-reptiles who carry the ancient 
-magic of the land in their 
-blood. Evil dragons are vain and 
-cunning, while good dragons are 
-noble and sagacious. They can 
-live for many thousands of years.
-All dragons love treasure and 
-hoard it in their remote, well-protected lairs deep within their 
-favored environ. A dragon's lair 
-has its level x 100 in gold pieces 
-and 1d4 items from the 80-100 
-range on its treasure table.
 DRAGON, DESERT
 The smell of ozone precedes 
 this desert-dwelling dragon. 
@@ -858,15 +813,6 @@ cube extending from dragon.
 DC 15 CON or 2d10 damage and 
 blinded for 1 round. 
 
-DROW
-Lithe, subterranean elves with 
-ebon skin, white hair, and red 
-eyes that see in the dark. They 
-are stealthy and cunning. 
-Drow live in strikingly decadent, 
-matriarchal societies centered 
-around the worship of their cruel 
-spider-demon goddess.
 DROW
 A graceful, shadowy elf that 
 pounces like a spider.
@@ -990,61 +936,101 @@ damage. Lasts 2d4 rounds.
 Wish. Cast wish once a week for 
 a mortal, no spellcasting check. 
 
-ELEMENTALS
-ELEMENTAL, AIR
+LESSER ELEMENTAL, AIR
 A howling tornado of wind.
-AC 16, HP 29/42, ATK 3 slam +7 
-(2d6/3d6) or 1 whirlwind, MV
+AC 16, HP 29, ATK 3 slam +7 
+(2d6) or 1 whirlwind, MV
 double near (fly), S +3, D +5, C +2, 
-I -2, W +1, Ch -2, AL N, LV 6/9
+I -2, W +1, Ch -2, AL N, LV 6
 Impervious. Only damaged by 
 magical sources. 
 Whirlwind. All within close DC 
 15 DEX or flung 2d20 feet in 
 random direction.
-ELEMENTAL, EARTH
+
+GREATER ELEMENTAL, AIR
+A howling tornado of wind.
+AC 16, HP 42, ATK 3 slam +7 
+(3d6) or 1 whirlwind, MV
+double near (fly), S +3, D +5, C +2, 
+I -2, W +1, Ch -2, AL N, LV 9
+Impervious. Only damaged by 
+magical sources. 
+Whirlwind. All within close DC 
+15 DEX or flung 2d20 feet in 
+random direction.
+
+LESSER ELEMENTAL, EARTH
 A thundering pillar of earth.
-AC 17, HP 31/44, ATK 3 slam +7 
-(2d8/3d8) or 1 avalanche, MV
+AC 17, HP 31, ATK 3 slam +7 
+(2d8) or 1 avalanche, MV
 near (burrow), S +5, D +0, C +4, I
--2, W +1, Ch -2, AL N, LV 6/9
+-2, W +1, Ch -2, AL N, LV 6
 Impervious. Only damaged by 
 magical sources. 
 Avalanche. All within close DC 15 
 STR or entombed for 1d4 rounds 
 under mounds of earth.
-ELEMENTAL, FIRE
+
+GREATER ELEMENTAL, EARTH
+A thundering pillar of earth.
+AC 17, HP 44, ATK 3 slam +7 
+(3d8) or 1 avalanche, MV
+near (burrow), S +5, D +0, C +4, I
+-2, W +1, Ch -2, AL N, LV 9
+Impervious. Only damaged by 
+magical sources. 
+Avalanche. All within close DC 15 
+STR or entombed for 1d4 rounds 
+under mounds of earth.
+
+LESSER ELEMENTAL, FIRE
 A roaring column of flames.
-AC 15, HP 30/43, ATK 3 slam +6 
-(2d10/3d10) or 1 inferno, MV near 
+AC 15, HP 30, ATK 3 slam +6 
+(2d10) or 1 inferno, MV near 
 (fly), S +4, D +3, C +3, I -2, W +1, Ch
--2, AL N, LV 6/9
+-2, AL N, LV 6
 Impervious. Only damaged by 
 magical sources. Fire immune.
 Inferno. All within near DC 15 
 DEX or 3d8 damage.
-ELEMENTAL, WATER
+
+GREATER ELEMENTAL, FIRE
+A roaring column of flames.
+AC 15, HP 43, ATK 3 slam +6 
+(3d10) or 1 inferno, MV near 
+(fly), S +4, D +3, C +3, I -2, W +1, Ch
+-2, AL N, LV 9
+Impervious. Only damaged by 
+magical sources. Fire immune.
+Inferno. All within near DC 15 
+DEX or 3d8 damage.
+
+LESSER ELEMENTAL, WATER
 A crashing vortex of water.
-AC 15, HP 29/42, ATK 3 slam +6 
-(2d6/3d6) or 1 whirlpool, MV
+AC 15, HP 29, ATK 3 slam +6 
+(2d6) or 1 whirlpool, MV
 double near (swim), S +4, D +2, C
-+2, I -2, W +1, Ch -2, AL N, LV 6/9
++2, I -2, W +1, Ch -2, AL N, LV 6
 Impervious. Only damaged by 
 magical sources. 
 Whirlpool. All within close DC 15 
 STR or immobilized inside water 
 elemental (treat as underwater). 
 DC 15 STR on turn to escape. 
-Elementals are semi-humanoid 
-beings of pure energy that speak 
-rudimentary Primordial. Earth 
-and air are anathema to each 
-other, as are fire and water.
-Lesser elementals are LV 6 
-and their slam deals 2 dice of 
-damage. Greater elementals are 
-LV 9 and their slam deals 3 dice 
-of damage. 
+
+GREATER ELEMENTAL, WATER
+A crashing vortex of water.
+AC 15, HP 42, ATK 3 slam +6 
+(3d6) or 1 whirlpool, MV
+double near (swim), S +4, D +2, C
++2, I -2, W +1, Ch -2, AL N, LV 9
+Impervious. Only damaged by 
+magical sources. 
+Whirlpool. All within close DC 15 
+STR or immobilized inside water 
+elemental (treat as underwater). 
+DC 15 STR on turn to escape. 
 
 ELEPHANT
 Mighty mammals with tough 
@@ -1162,25 +1148,6 @@ CHA check. If ghost wins, it
 inhabits target's body and 
 controls it for 2d4 rounds.
 
-GIANTS
-Giants once ruled the earth long 
-ago, warring with dragons for 
-supremacy over the seas and 
-skies. But the weariness of eons 
-eventually caused their glorious 
-societies to erode. Now, they 
-live in reclusive clans, wary of 
-outsiders and withdrawn from 
-the younger civilizations. 
-Hill and goat giants are brutish 
-louts who ally with goblinkind. 
-Fire giants build enclaves in 
-volcanoes, frost giants in frozen 
-wastes. Stone giants live deep 
-underground, while cloud giants
-occupy lofty mountain castles. 
-Mighty storm giants dwell in 
-majestic, deep-sea strongholds. 
 GIANT, CLOUD
 Pale, angular giants with 
 blue-gray hair, light eyes, and 
@@ -1305,17 +1272,6 @@ I +1, W +1, Ch +1, AL L, LV 3
 Stone Meld. 2/day, underground 
 only. Turn invisible for 3 rounds.
 
-GOBLINS
-Goblins are the smallest 
-and most numerous of the 
-goblinoids, often serving 
-hobgoblins, bugbears, or even 
-hill giants as replaceable lackeys.
-They live in filthy, subterranean 
-warrens built of scavenged 
-materials. The goblin boss rules 
-by cruelty and strength, and the 
-shaman wields cryptic sorcery. 
 GOBLIN
 A short, hairless humanoid with 
 green skin and pointy ears.
@@ -1351,13 +1307,6 @@ Stink Bomb (WIS Spell). DC
 damage and DC 12 CON or 
 DISADV on next check/attack. 
 
-GOLEMS
-Creatures constructed from 
-various materials and imbued 
-with a rudimentary sentience. 
-Making a golem requires rare, 
-expensive materials and a series 
-of complicated rituals.
 GOLEM, CLAY
 A towering, faceless humanoid 
 shaped from glistening clay.
@@ -1480,17 +1429,6 @@ or 1 longsword +1 (1d8), MV near,
 S +1, D +0, C +0, I +0, W +1, Ch +0, 
 AL L, LV 1
 
-HAGS
-Sinister crones who rose out of 
-the black bogs of the Unseelie 
-realms long ago. They are 
-wretched beings of hatred and 
-evil, suffused with cursed magic.
-Sea hags haunt dank ocean 
-caves and grottoes. Night hags
-are drawn to places of depravity 
-and woe, while weald hags
-fester in deep, boggy woods. 
 HAG, WEALD
 Eyes dark as moonless nights, 
 skin made of rotting wood, hair 
@@ -2084,13 +2022,6 @@ Disease. DC 15 CON or infected.
 DC 15 CON each day or lose 1d6 
 HP (can't heal). Ends on success.
 
-OUTSIDERS
-Alien horrors from the frozen, 
-outer reaches of the cosmos or 
-the Chaos-infused Dark Realms. 
-Outsiders were born from the 
-nightmares of gods and are 
-unsettling to all other creatures.
 PRIMORDIAL SLIME
 A mass of clear ooze strobing 
 with sick pulses of violet light.
@@ -2882,21 +2813,6 @@ C
 I -4, 
 W -3, Ch -4, AL N, LV 2
 
-VIPERIANS
-A fallen and scattered civilization 
-of snake-people who built their 
-blood-soaked dynasties with 
-sorcery and cunning. Their 
-descendants fight for scraps of 
-faded grandeur in the decaying 
-ruins of their forgotten cities. 
-Small circles of viperian wizards
-practice ancient magic and 
-lead their enclaves. Viperian 
-ophids are rare and much more 
-snakelike than their brethren, 
-serving as esteemed guardians 
-and warriors.
 VIPERIAN
 Lithe, snake-headed people with 
 cobra hoods and emerald green 
