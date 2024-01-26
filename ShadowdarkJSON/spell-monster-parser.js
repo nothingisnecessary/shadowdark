@@ -1,5 +1,13 @@
+// decoder ring for parsing monster/NPC alignment codes
+const alignments = {
+  "C": "Chaotic",
+  "L": "Lawful",
+  "N": "Neutral"
+};
+
 // convert string to title case
 let titleCase = function(str) {
+  if (!str) return '';
   return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
@@ -74,28 +82,34 @@ let parseMonsters = function(text) {
     const statsAndActionsLines = lines.slice(acIndex);
 
     // find beginning of actions text
-    const actionsIndex = statsAndActionsLines.findIndex(o=>/[Ll][Vv]\s(\d+|\*)$/.test(o)) + 1;
+    const actionsIndex = statsAndActionsLines.findIndex(o=>/[Ll][Vv]\s(\d+|\*)(\/\d+)?$/.test(o)) + 1;
     const actionsLines = statsAndActionsLines.slice(actionsIndex);
     monster.actions = parseActions(actionsLines);
 
     // slice out and parse stats from between monster description and actions
     const statsLines = statsAndActionsLines.slice(0, actionsIndex).map(o=>o.trim()).join(" ").split(/,/);
     for (let i = 0; i < statsLines.length; i++) {
-      const statsLine = statsLines[i].trim(); // Trim leading and trailing whitespace for copy-paste issues	
+      let statsLine = statsLines[i].trim(); // Trim leading and trailing whitespace for copy-paste issues	
       if (!statsLine?.length) continue; // skip empty lines
       try {
         if (!monster.armorClass && statsLine.startsWith('AC ')) {
           const [, AC, armor] = statsLine.match(/AC (\d+)(?: \(([\w\s]+)\))?/);
           monster.armorClass = +AC;
           monster.armor = armor || "";
-        } else if (!monster.maxHitPoints && statsLine.startsWith('HP ')) {
-          const [, HP] = statsLine.match(/HP (\d+)/);
-          monster.maxHitPoints = parseInt(HP, 10) || monster.name==="Hydra" ? 55 : 0; // hydra heads special case (5 heads)
+        } else if (!monster.maxHitPoints && /^[Hh][Pp]\s(\*|\d+)(\/\d+)?$/.test(statsLine)) {
+          // if there is a rare case of multi-value like 4/5 grab the first number (ex: elementals don't have separate lesser/greater stats in the book)
+          const hp = /^[Hh][Pp]\s(?<hp>\*|\d+)(\/\d+)?$/.exec(statsLine).groups?.hp || "";
+          monster.maxHitPoints = parseInt(hp, 10) || (monster.name==="Hydra" ? 55 : 0); // hydra heads special case (5 heads)
         } else if (!monster.attacks && statsLine.startsWith('ATK ')) {
+              // hacky fix for Azer (and other stat blocks that have comma in the ATK section)
+          if(/^\s+[^A-Z]/.test(statsLines[i+1]))
+          {
+            statsLine += ' + ' + statsLines[i+1]; // restore comma
+          }
           const [, attackText] = statsLine.match(/ATK (.+)/);
           const attackStrings = attackText.split(/\bor\b|\band\b/).map(s => s.trim());
           const attacks = attackStrings.map(s => 
-            /^(?<qty>\d+(d\d+)?)\s*(?<name>(\+\d+)?[\w\s]*)\b(\s*)?(\((?<rng>([\w\s/]+))\)\s*)?(?<mod>[\+|\-]\d+)?(\s*)?[\(]?(?<dmg>\d+d\d+(\s\+\s\d+)?)?(\s*)?[\+,]?(\s)?(?<effect>[^\)][\w\s\+]*)?\)?/g
+            /^(?<qty>\d+(d\d+)?)\s*(?<name>(\+\d+)?[\w\s]*)\b(\s*)?(\((?<rng>([\w\s/]+))\)\s*)?(?<mod>[\+|\-]\d+)?(\s*)?[\(]?(?<dmg>(\d+[Dd]\d+|\d+)(\s\+\s\d+)?)?(\/\d+[Dd]\d+)?(\s*)?[\+,]?(\s+)?(?<effect>[^\)][\w\s\+]*)?\)?/g
             .exec(s)?.groups).filter(s=>s!==undefined);
           monster.attackText = attackText;
           monster.attacks = attacks.map(attack => {
@@ -130,8 +144,10 @@ let parseMonsters = function(text) {
           monster.stats.CHA = Math.max(1, 10 + 2 * monster.stats.cha_mod); // derive core stat
         } else if (!monster.alignment && /^[Aa][Ll]\s+[\(\w\s]*[\w\)]$/.test(statsLine)) {
           monster.alignment = alignments[statsLine.substring(3)];
-        } else if (!monster.level && /^[Ll][Vv]\s(\*|\d+)$/.test(statsLine)) {
-          monster.level = parseInt(statsLine.substring(3), 10) || monster.name==="Hydra" ? 10 : 0; // hydra heads special case (5 heads)
+        } else if (!monster.level && /^[Ll][Vv]\s(\*|\d+)(\/\d+)?$/.test(statsLine)) {
+          // if there is a rare case of multi-value like 4/5 grab the first number (ex: elementals don't have separate lesser/greater stats in the book)
+          const levelText = /^[Ll][Vv]\s(?<level>\*|\d+)(\/\d+)?$/.exec(statsLine).groups?.level || "";
+          monster.level = parseInt(levelText, 10) || (monster.name==="Hydra" ? 10 : 0); // hydra heads special case (5 heads)
           break; // done getting stats - get attack text next loop
         }
       }
@@ -143,7 +159,7 @@ let parseMonsters = function(text) {
   });
   return monsters;
 }
-
+		
 let parseActions = function(inputArray) {
   const result = [];
 
@@ -154,7 +170,7 @@ let parseActions = function(inputArray) {
     };
 
     // action name
-    const actionNameRegex = /^[A-Z][^.]*/;
+    const actionNameRegex = /^[A-Z][^A-Z][^.]*/;
     const actionNameMatch = inputArray[i].match(actionNameRegex);
     if (actionNameMatch) {
       actionObject.name = actionNameMatch[0].trim();
@@ -181,6 +197,43 @@ let parseActions = function(inputArray) {
       result.push(actionObject);
     }
   }		
+  return result;
+};
+
+let parseFeatures = function(inputArray) {
+  const result = [];
+  for (let i = 0; i < inputArray.length; i++) {
+    const feature = {
+      name: '',
+      description: ''
+    };
+
+    // feature name
+    const featureNameRegex = /^[A-Z][^.]*/;
+    const featureNameMatch = inputArray[i].match(featureNameRegex);
+    if (featureNameMatch) {
+      feature.name = featureNameMatch[0].trim();
+    }
+
+    // description
+    const descriptionRegex = /\..*?(\.|$)/;
+    const descriptionMatch = inputArray[i].match(descriptionRegex);
+    if (descriptionMatch) {
+      feature.description = inputArray[i].substring(descriptionMatch.index + 1).trim();
+
+      // concatenate subsequent lines for description
+      let j = i + 1;
+      while (j < inputArray.length && !featureNameRegex.test(inputArray[j])) {
+        feature.description += ' ' + inputArray[j].trim();
+        j++;
+      }
+      i = j - 1; // skip processed lines
+    }
+    // sanity check - add only if both name and description are not empty
+    if (feature.name !== '' && feature.description !== '') {
+      result.push(feature);
+    }
+  }
   return result;
 };
 
@@ -244,7 +297,7 @@ function parseSpells(text) {
 }
 
 function parseProperty(description, property) {
-  const regex = new RegExp(`(\\d+d\\d+)\\s${property}`, 'i');
+  const regex = new RegExp(`(\\d+[Dd]\\d+)\\s${property}`, 'i');
   const match = description.match(regex);
   return match ? match[1] : '';
 }
