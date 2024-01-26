@@ -1,5 +1,5 @@
 {
-  "version": "2024.1.25.0",
+  "version": "2024.1.25.1",
   "thirdPartyLicenseText": "The Shadowdark JSON Project is an independent product published under the Shadowdark RPG Third-Party License and is not affiliated with The Arcane Library, LLC. Shadowdark RPG © 2023 The Arcane Library, LLC.",
   "magicItems": [],
   "monsters": [
@@ -885,6 +885,8 @@
         }
       ],
       "stats": {
+        "str_mod": 4,
+        "STR": 18,
         "dex_mod": 1,
         "DEX": 12,
         "con_mod": 3,
@@ -910,6 +912,7 @@
           "effect": ""
         }
       ],
+      "movement": "near (climb)",
       "alignment": "Neutral",
       "level": 5
     },
@@ -1987,6 +1990,25 @@
       },
       "armorClass": 13,
       "armor": "",
+      "maxHitPoints": 4,
+      "attackText": "1 bite +3 (1d4) or 1 darkness",
+      "attacks": [
+        {
+          "name": "Bite",
+          "qty": 1,
+          "range": "",
+          "damage": "1d4",
+          "mod": 3,
+          "effect": ""
+        },
+        {
+          "name": "Darkness",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "effect": ""
+        }
+      ],
       "movement": "near (fly)",
       "alignment": "Neutral",
       "level": 1
@@ -2744,7 +2766,37 @@
       "name": "Plesiosaurus",
       "description": "Aquatic reptiles as big as elephants. Flat flippers and narrow, toothy maws on long necks.",
       "actions": [],
-      "stats": {}
+      "stats": {
+        "str_mod": 4,
+        "STR": 18,
+        "dex_mod": 3,
+        "DEX": 16,
+        "con_mod": 3,
+        "CON": 16,
+        "int_mod": -3,
+        "INT": 4,
+        "wis_mod": 1,
+        "WIS": 12,
+        "cha_mod": -3,
+        "CHA": 4
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 30,
+      "attackText": "2 bite +5 (2d8)",
+      "attacks": [
+        {
+          "name": "Bite",
+          "qty": 2,
+          "range": "",
+          "damage": "2d8",
+          "mod": 5,
+          "effect": ""
+        }
+      ],
+      "movement": "double near (swim)",
+      "alignment": "Neutral",
+      "level": 6
     },
     {
       "name": "Velociraptor",
@@ -9418,7 +9470,37 @@
           "description": "Immune to morale checks."
         }
       ],
-      "stats": {}
+      "stats": {
+        "str_mod": 5,
+        "STR": 20,
+        "dex_mod": 1,
+        "DEX": 12,
+        "con_mod": 2,
+        "CON": 14,
+        "int_mod": -3,
+        "INT": 4,
+        "wis_mod": 1,
+        "WIS": 12,
+        "cha_mod": -3,
+        "CHA": 4
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 38,
+      "attackText": "3 bite +7 (2d8)",
+      "attacks": [
+        {
+          "name": "Bite",
+          "qty": 3,
+          "range": "",
+          "damage": "2d8",
+          "mod": 7,
+          "effect": ""
+        }
+      ],
+      "movement": "double near (swim)",
+      "alignment": "Neutral",
+      "level": 8
     },
     {
       "name": "Siren",
