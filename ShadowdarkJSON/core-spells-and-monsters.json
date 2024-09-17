@@ -174,7 +174,7 @@
         "CHA": 18
       },
       "armorClass": 17,
-      "armor": "",
+      "armor": "plate mail + shield",
       "maxHitPoints": 42,
       "attackText": "3 bastard sword +7 (1d8) or 1 horn",
       "attacks": [
@@ -226,7 +226,7 @@
         "CHA": 18
       },
       "armorClass": 16,
-      "armor": "",
+      "armor": "+1 plate mail",
       "maxHitPoints": 53,
       "attackText": "3 silvered bastard sword +9 (1d10)",
       "attacks": [
@@ -271,7 +271,7 @@
         "CHA": 20
       },
       "armorClass": 18,
-      "armor": "",
+      "armor": "+3 plate mail",
       "maxHitPoints": 76,
       "attackText": "3 flaming greatsword +10 (2d12)",
       "attacks": [
@@ -472,7 +472,7 @@
       "actions": [
         {
           "name": "Beguile (INT Spell)",
-          "description": "DC 11. Focus."
+          "description": "DC 11. Focus. One target in near of LV 2 or less is stupefied for the duration."
         },
         {
           "name": "Magic Bolt (INT Spell)",
@@ -525,15 +525,11 @@
       "actions": [
         {
           "name": "Death Bolt (INT Spell)",
-          "description": "DC 15."
+          "description": "DC 15. One target of LV 9 or less within near DC 15 CON or go to 0 HP."
         },
         {
           "name": "Enervate (INT Spell)",
-          "description": "DC 14."
-        },
-        {
-          "name": "Focus",
-          "description": "One target within near is stupefied for the duration."
+          "description": "DC 14. Focus. One target within near is stupefied for the duration."
         },
         {
           "name": "Fireblast (INT Spell)",
@@ -549,7 +545,7 @@
         },
         {
           "name": "Void Step (INT Spell)",
-          "description": "Self and up to 4 willing targets. DC 15."
+          "description": "Self and up to 4 willing targets. DC 15. Teleport up to 100 miles."
         }
       ],
       "stats": {
@@ -738,7 +734,7 @@
         "CHA": 8
       },
       "armorClass": 13,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 4,
       "attackText": "1 club +1 (1d4) or 1 shortbow (far) +0 (1d4)",
       "attacks": [
@@ -1228,7 +1224,7 @@
         "CHA": 6
       },
       "armorClass": 13,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 14,
       "attackText": "2 spiked mace +3 (1d6)",
       "attacks": [
@@ -1896,7 +1892,7 @@
         "CHA": 10
       },
       "armorClass": 14,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 9,
       "attackText": "1 longsword +1 (1d8) or 1 spell +2",
       "attacks": [
@@ -2478,7 +2474,7 @@
         "CHA": 20
       },
       "armorClass": 17,
-      "armor": "",
+      "armor": "+1 plate mail",
       "maxHitPoints": 43,
       "attackText": "3 greatsword +8 (1d12) or 2 longbow (far) +8 (1d8 + poison)",
       "attacks": [
@@ -2562,7 +2558,7 @@
         },
         {
           "name": "Contract",
-          "description": "Can grant mighty boons and patronage on behalf of an archdevil in exchange for a sworn soul. ADV on related"
+          "description": "Can grant mighty boons and patronage on behalf of an archdevil in exchange for a sworn soul. ADV on related Charisma checks."
         },
         {
           "name": "Poison",
@@ -2954,7 +2950,7 @@
         },
         {
           "name": "Mirage",
-          "description": "1/day, in place of attacks."
+          "description": "1/day, in place of attacks. Create 3 illusory duplicates that disappear when hit. Determine randomly if an attack hits dragon or illusions."
         }
       ],
       "stats": {
@@ -3207,7 +3203,7 @@
           "effect": ""
         }
       ],
-      "movement": "double near (fly",
+      "movement": "double near (fly, swim)",
       "alignment": "Lawful",
       "level": 16
     },
@@ -3255,7 +3251,7 @@
           "effect": ""
         }
       ],
-      "movement": "double near (burrow",
+      "movement": "double near (burrow, swim)",
       "alignment": "Chaotic",
       "level": 12
     },
@@ -3326,11 +3322,11 @@
         },
         {
           "name": "Snuff (WIS Spell)",
-          "description": "DC 12."
+          "description": "DC 12. Extinguish all light sources (even magical) within near."
         },
         {
           "name": "Summon Spiders (WIS Spell)",
-          "description": " DC 14. Summon 2d4 loyal giant spiders that appear within near."
+          "description": "DC 14. Summon 2d4 loyal giant spiders that appear within near. They stay for 5 rounds."
         },
         {
           "name": "Web (WIS Spell)",
@@ -3448,11 +3444,11 @@
         },
         {
           "name": "Summon Bear (INT Spell)",
-          "description": "DC 14."
+          "description": "DC 14. Summon a loyal brown bear that appears within near. It stays for 5 rounds."
         },
         {
           "name": "Thunderclap (INT Spell)",
-          "description": "DC 13."
+          "description": "DC 13. Fills a near-sized cube extending from druid. Creatures within are thrown 2d20 feet in a random direction."
         }
       ],
       "stats": {
@@ -3578,7 +3574,7 @@
         "CHA": 8
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 12,
       "attackText": "1 war pick +2 (1d6)",
       "attacks": [
@@ -4535,7 +4531,7 @@
         },
         {
           "name": "Life Drain",
-          "description": "1d4 CON damage."
+          "description": "1d4 CON damage. Death if reduced to 0 CON."
         },
         {
           "name": "Possess",
@@ -4934,7 +4930,7 @@
           "effect": "latch"
         }
       ],
-      "movement": "near (climb",
+      "movement": "near (climb, swim)",
       "alignment": "Neutral",
       "level": 4
     },
@@ -4957,7 +4953,7 @@
         "CHA": 12
       },
       "armorClass": 16,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 15,
       "attackText": "2 longsword +3 (1d8) or 1 spear (close/near) +3 (1d6)",
       "attacks": [
@@ -5055,7 +5051,7 @@
         "CHA": 12
       },
       "armorClass": 14,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 14,
       "attackText": "1 pick +3 (1d6) or 1 dart (near) +2 (1d4)",
       "attacks": [
@@ -5187,7 +5183,7 @@
         },
         {
           "name": "Skitter (WIS Spell)",
-          "description": "DC 12. Self."
+          "description": "DC 12. Self. Climb like a spider for 5 rounds."
         },
         {
           "name": "Stink Bomb (WIS Spell)",
@@ -5723,7 +5719,7 @@
         "CHA": 10
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 4,
       "attackText": "1 spear (close/near) +1 (1d6) or 1 longsword +1 (1d8)",
       "attacks": [
@@ -5955,7 +5951,7 @@
         },
         {
           "name": "Fire Breath",
-          "description": "Fills a near-sized cube extending from hell hound. DC 15 DEX or 3d8 damage."
+          "description": "Fills a near-sized cube extending from hell hound. DC 15 DEX or 3d8 damage. Cannot use again for 1d4 rounds."
         }
       ],
       "stats": {
@@ -6098,7 +6094,7 @@
         "CHA": 12
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 10,
       "attackText": "1 longsword +3 (1d8) or 1 longbow (far) +0 (1d8)",
       "attacks": [
@@ -6183,7 +6179,6 @@
       },
       "armorClass": 15,
       "armor": "",
-      "maxHitPoints": 55,
       "attackText": "1 bite (near) +6 (1d8)",
       "attacks": [
         {
@@ -6196,8 +6191,7 @@
         }
       ],
       "movement": "near (swim)",
-      "alignment": "Neutral",
-      "level": 10
+      "alignment": "Neutral"
     },
     {
       "name": "Invisible Stalker",
@@ -6313,7 +6307,7 @@
         "CHA": 12
       },
       "armorClass": 17,
-      "armor": "",
+      "armor": "plate mail + shield",
       "maxHitPoints": 14,
       "attackText": "2 bastard sword +3 (1d8)",
       "attacks": [
@@ -6384,7 +6378,7 @@
         },
         {
           "name": "Spider Swarm (CHA Spell)",
-          "description": " DC 12. A spider swarm appears within near. Stays 1d4 rounds."
+          "description": "DC 12. A spider swarm appears within near. Stays 1d4 rounds. Follows sorcerer's commands."
         }
       ],
       "stats": {
@@ -6445,7 +6439,7 @@
         },
         {
           "name": "Storm",
-          "description": "Seas become violently turbulent in 1 mile radius around kraken. Lasts 2d4 rounds."
+          "description": "Seas become violently turbulent in 1 mile radius around kraken. Lasts 2d4 rounds. Seaborne vessels have a 1:6 chance of capsizing each round."
         }
       ],
       "stats": {
@@ -6484,7 +6478,7 @@
         },
         {
           "name": "Lightning Bolt",
-          "qty": 1,
+          "qty": "1d4",
           "range": "",
           "damage": "",
           "effect": ""
@@ -6549,23 +6543,15 @@
         },
         {
           "name": "Fool's Gold (CHA Spell)",
-          "description": "DC 12."
-        },
-        {
-          "name": "Close",
-          "description": "One small object or small group of similar objects. Turn objects into silver or gold pieces."
+          "description": "DC 12. Close. One small object or small group of similar objects. Turn objects into silver or gold pieces. Lasts 1 day."
         },
         {
           "name": "Illusion (CHA Spell)",
-          "description": "DC 11."
+          "description": "DC 11. Create a convincing visual and/or auditory illusion within near. Lasts until dismissed."
         },
         {
           "name": "Invisibility (CHA Spell)",
-          "description": "DC 12."
-        },
-        {
-          "name": "Self",
-          "description": "Become invisible for 2d4 rounds."
+          "description": "DC 12. Self. Become invisible for 2d4 rounds."
         }
       ],
       "stats": {
@@ -6622,7 +6608,7 @@
         },
         {
           "name": "Null (INT Spell)",
-          "description": "Self. DC 14."
+          "description": "Self. DC 14. Hostile spells targeting lich are DC 18 to cast. Lasts 1d4 rounds."
         },
         {
           "name": "Shadow Leap (INT Spell)",
@@ -6630,7 +6616,7 @@
         },
         {
           "name": "Sigil of Doom (INT Spell)",
-          "description": "DC 15."
+          "description": "DC 15. One target of LV 9 or less within near DC 15 CON or go to 0 HP."
         },
         {
           "name": "Wither (INT Spell)",
@@ -6732,7 +6718,7 @@
         "CHA": 6
       },
       "armorClass": 14,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 11,
       "attackText": "1 spear (close/near) +2 (1d6)",
       "attacks": [
@@ -6767,15 +6753,11 @@
         },
         {
           "name": "Levitate (INT Spell)",
-          "description": "DC 12. Close."
-        },
-        {
-          "name": "Focus",
-          "description": "Hover near for duration, vertical movement only."
+          "description": "DC 12. Close. Focus. Hover near for duration, vertical movement only."
         },
         {
           "name": "Snare (INT Spell)",
-          "description": "DC 13. Focus."
+          "description": "DC 13. Focus. One humanoid target within near paralyzed for duration."
         }
       ],
       "stats": {
@@ -7393,7 +7375,7 @@
         },
         {
           "name": "Whispers (CHA Spell)",
-          "description": "DC 12."
+          "description": "DC 12. Hostile spells cast on one target in near are DC 9 for 1d4 rounds."
         }
       ],
       "stats": {
@@ -7473,7 +7455,7 @@
           "effect": ""
         }
       ],
-      "movement": "near (burrow",
+      "movement": "near (burrow, climb)",
       "alignment": "Chaotic",
       "level": 6
     },
@@ -7483,31 +7465,7 @@
       "actions": [
         {
           "name": "Impervious",
-          "description": "Nightmare and its rider immune to fire. OBE-IXX OF AZARUMME"
-        },
-        {
-          "name": "Legendary Undead",
-          "description": "Immune to morale checks. Only damaged by magical sources. Hostile spells targeting Obe-Ixx are DC 18 to cast."
-        },
-        {
-          "name": "Blood Drain",
-          "description": "Obe-Ixx heals 2d8 HP, target permanently loses 1d6 CON. At 0 CON, target dies and rises as a loyal vampire or vampire spawn (Obe-Ixx chooses)."
-        },
-        {
-          "name": "Charm",
-          "description": "One humanoid target who can see Obe-Ixx within near, DC 15 CHA or under Obe-Ixx's control for 1d4 days."
-        },
-        {
-          "name": "Dire Shapechange",
-          "description": "In place of attacks, turn into a giant bat, dire wolf, or back into regular form."
-        },
-        {
-          "name": "Moonbite Properties",
-          "description": "+2 greatsword, thrown weapon, returns after being thrown. Spells to heal damage it inflicts are DC 15 to cast."
-        },
-        {
-          "name": "Ur-Vampire",
-          "description": "Must sleep in sarcophagus at least once per moon cycle or loses 2d8 HP per day that cannot heal until sleeping in sarcophagus. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart while at 0 HP with a wooden stake carved from a tree from the Tal-Yool jungle. \"By this blade, the empire of Azarumme shall rise again!\" -Obe-Ixx of Azarumme"
+          "description": "Nightmare and its rider immune to fire."
         }
       ],
       "stats": {
@@ -7543,12 +7501,88 @@
       "level": 6
     },
     {
+      "name": "Obe-Ixx of Azarumme",
+      "description": "A pale, angular woman in translucent plate mail fashioned from giant scorpion chitin. Obe-Ixx, daughter of Azarumme, rose up from the prehistoric barbarian tribes of Tal-Yool to conquer all in her path. One day, she stood at the steps of an obsidian ziggurat deep within the trackless jungle. Forty nights later, Obe-Ixx emerged as the ur-vampire, bloodlust made flesh. Her dynasty would rise and fall again and again over the coming millennia.",
+      "actions": [
+        {
+          "name": "Legendary Undead",
+          "description": "Immune to morale checks. Only damaged by magical sources. Hostile spells targeting Obe-Ixx are DC 18 to cast."
+        },
+        {
+          "name": "Blood Drain",
+          "description": "Obe-Ixx heals 2d8 HP, target permanently loses 1d6 CON. At 0 CON, target dies and rises as a loyal vampire or vampire spawn (Obe-Ixx chooses)."
+        },
+        {
+          "name": "Charm",
+          "description": "One humanoid target who can see Obe-Ixx within near, DC 15 CHA or under Obe-Ixx's control for 1d4 days."
+        },
+        {
+          "name": "Dire Shapechange",
+          "description": "In place of attacks, turn into a giant bat, dire wolf, or back into regular form."
+        },
+        {
+          "name": "Moonbite Properties",
+          "description": "+2 greatsword, thrown weapon, returns after being thrown. Spells to heal damage it inflicts are DC 15 to cast."
+        },
+        {
+          "name": "Ur-Vampire",
+          "description": "Must sleep in sarcophagus at least once per moon cycle or loses 2d8 HP per day that cannot heal until sleeping in sarcophagus. Takes 3d8 damage each round while in direct sunlight. Cannot be killed unless pierced through heart while at 0 HP with a wooden stake carved from a tree from the Tal-Yool jungle. \"By this blade, the empire of Azarumme shall rise again!\" -Obe-Ixx of Azarumme"
+        }
+      ],
+      "stats": {
+        "str_mod": 5,
+        "STR": 16,
+        "dex_mod": 3,
+        "DEX": 16,
+        "con_mod": 4,
+        "CON": 14,
+        "int_mod": 3,
+        "INT": 8,
+        "wis_mod": 4,
+        "WIS": 12,
+        "cha_mod": 5,
+        "CHA": 6
+      },
+      "armorClass": 18,
+      "armor": "+3 plate mail",
+      "maxHitPoints": 76,
+      "attackText": "4 greatsword (near) +11 (1d12 + 2 + Moonbite properties) and 1 bite +9 (1d8 + blood drain) and 1 charm",
+      "attacks": [
+        {
+          "name": "Greatsword",
+          "qty": 4,
+          "range": "near",
+          "damage": "1d12 + 2",
+          "mod": 11,
+          "effect": "Moonbite properties"
+        },
+        {
+          "name": "Bite",
+          "qty": 1,
+          "range": "",
+          "damage": "1d8",
+          "mod": 9,
+          "effect": "blood drain"
+        },
+        {
+          "name": "Charm",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "effect": ""
+        }
+      ],
+      "movement": "near (climb, fly)",
+      "alignment": "Chaotic",
+      "level": 16
+    },
+    {
       "name": "Ochre Jelly",
       "description": "An orange puddle of quivering slime.",
       "actions": [
         {
           "name": "Split",
-          "description": "If cut or chopped, split into two smaller oozes (divide remaining HP between both)."
+          "description": "If cut or chopped, split into two smaller oozes (divide remaining HP between both). Can split up to four times."
         }
       ],
       "stats": {
@@ -7593,7 +7627,7 @@
         },
         {
           "name": "Tentacle auto-hits each round",
-          "description": " DC 15 STR on turn to break free."
+          "description": "DC 15 STR on turn to break free."
         },
         {
           "name": "Ink",
@@ -7678,15 +7712,15 @@
         },
         {
           "name": "Fade (CHA Spell)",
-          "description": "DC 13. Self."
+          "description": "DC 13. Self. Become invisible for 1d4 rounds."
         },
         {
           "name": "Hellfrost (CHA Spell)",
-          "description": "DC 13."
+          "description": "DC 13. All within near-sized cube extending from oni 3d6 damage."
         },
         {
           "name": "Mist (CHA Spell)",
-          "description": "DC 13. Self."
+          "description": "DC 13. Self. Turn into mist that can fly double near. Lasts 2d4 rounds."
         }
       ],
       "stats": {
@@ -7753,7 +7787,7 @@
         "CHA": 8
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 4,
       "attackText": "1 greataxe +2 (1d8)",
       "attacks": [
@@ -8206,7 +8240,7 @@
       "actions": [
         {
           "name": "Impervious",
-          "description": "Immune to fire."
+          "description": "Immune to fire. Only damaged by magical sources."
         },
         {
           "name": "Explosion",
@@ -8344,7 +8378,7 @@
       "actions": [
         {
           "name": "Anoint (WIS Spell)",
-          "description": "DC 12. Close."
+          "description": "DC 12. Close. One weapon or armor becomes a magic +2 version for 10 rounds."
         },
         {
           "name": "Healing Touch (WIS Spell)",
@@ -8352,19 +8386,11 @@
         },
         {
           "name": "Holy Flame (WIS Spell)",
-          "description": "DC 13."
-        },
-        {
-          "name": "Self",
-          "description": "Weapons ignite in magic flames and deal an additional 1d6 damage for 5 rounds."
+          "description": "DC 13. Self. Weapons ignite in magic flames and deal an additional 1d6 damage for 5 rounds."
         },
         {
           "name": "Rebuke (WIS Spell)",
-          "description": "DC 13."
-        },
-        {
-          "name": "Focus",
-          "description": "Chaotic creatures cannot attack priest or come within near range for duration."
+          "description": "DC 13. Focus. Chaotic creatures cannot attack priest or come within near range for duration."
         }
       ],
       "stats": {
@@ -8382,7 +8408,7 @@
         "CHA": 12
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 23,
       "attackText": "2 mace +3 (1d6) or 1 spell +3",
       "attacks": [
@@ -8417,7 +8443,7 @@
         },
         {
           "name": "Swallow",
-          "description": "On a natural attack roll of 18-20, target is swallowed."
+          "description": "On a natural attack roll of 18-20, target is swallowed. Total darkness inside and 2d10 damage per round. Worm regurgitates all swallowed if dealt at least 20 damage in one round to the inside of its gullet."
         }
       ],
       "stats": {
@@ -8515,7 +8541,7 @@
       "actions": [
         {
           "name": "Disease",
-          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill)."
+          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill). Repeat check once per day; ends on success. Die at 0 CON."
         }
       ],
       "stats": {
@@ -8555,7 +8581,7 @@
       "actions": [
         {
           "name": "Disease",
-          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill)."
+          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill). Repeat check once per day; ends on success. Die at 0 CON."
         }
       ],
       "stats": {
@@ -8596,7 +8622,7 @@
       "actions": [
         {
           "name": "Disease",
-          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill)."
+          "description": "DC 12 CON or 1d4 CON damage (can't heal while ill). Repeat check once per day; ends on success. Die at 0 CON."
         }
       ],
       "stats": {
@@ -8637,7 +8663,7 @@
       "actions": [
         {
           "name": "Disease",
-          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill)."
+          "description": "DC 9 CON or 1d4 CON damage (can't heal while ill). Repeat check once per day; ends on success. Die at 0 CON."
         }
       ],
       "stats": {
@@ -8776,7 +8802,7 @@
         "CHA": 14
       },
       "armorClass": 17,
-      "armor": "",
+      "armor": "plate mail + shield",
       "maxHitPoints": 28,
       "attackText": "3 bastard sword +4 (1d8 + 2)",
       "attacks": [
@@ -8807,7 +8833,7 @@
         },
         {
           "name": "Swallow",
-          "description": "On a natural attack roll of 18-20, target is swallowed."
+          "description": "On a natural attack roll of 18-20, target is swallowed. Total darkness inside and 2d10 damage per round. Remorhaz regurgitates all swallowed if dealt at least 20 damage in one round to the inside of its gullet."
         }
       ],
       "stats": {
@@ -9091,7 +9117,7 @@
         "CHA": 8
       },
       "armorClass": 14,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 9,
       "attackText": "2 trident (near) +1 (1d6)",
       "attacks": [
@@ -9386,7 +9412,7 @@
       "actions": [
         {
           "name": "Impervious",
-          "description": "Fire immune."
+          "description": "Fire immune. Healed by electricity."
         },
         {
           "name": "Engulf",
@@ -9546,7 +9572,7 @@
           "effect": ""
         }
       ],
-      "movement": "near (swim",
+      "movement": "near (swim, fly)",
       "alignment": "Chaotic",
       "level": 4
     },
@@ -9783,7 +9809,7 @@
         "CHA": 10
       },
       "armorClass": 15,
-      "armor": "",
+      "armor": "chainmail + shield",
       "maxHitPoints": 10,
       "attackText": "1 longsword +2 (1d8) or 1 crossbow (far) +1 (1d6)",
       "attacks": [
@@ -9822,19 +9848,15 @@
         },
         {
           "name": "Omens (WIS Spell)",
-          "description": "DC 12."
-        },
-        {
-          "name": "Self",
-          "description": "ADV on all actions for 1d4 rounds."
+          "description": "DC 12. Self. ADV on all actions for 1d4 rounds."
         },
         {
           "name": "Riddle (WIS Spell)",
-          "description": "DC 12."
+          "description": "DC 12. One target in far DC 15 INT or stupefied 1d4 rounds."
         },
         {
           "name": "Time Bend (WIS Spell)",
-          "description": "DC 14."
+          "description": "DC 14. One target in near frozen in time for 1d4 rounds."
         },
         {
           "name": "Unmake (WIS Spell)",
@@ -10055,19 +10077,7 @@
         },
         {
           "name": "Strangle",
-          "description": "Deals x2 damage against surprised creatures. THE TEN-EYED ORACLE"
-        },
-        {
-          "name": "A floating mass of rubbery skin crusted with barnacles",
-          "description": "Its ten eyestalks writhe like snakes, and a deep, circular scar mars its central body, blinding what was once a large eye above a lipless maw. The Ten-Eyed Oracle stalks the Shadowdark, burbling mad prophesies and somehow moving freely between the lightless fathoms of the earth. The keepers of the deep lore suspect The"
-        },
-        {
-          "name": "Legendary",
-          "description": "Only damaged by magical sources. Hostile spells targeting The Ten-Eyed Oracle are DC 18 to cast."
-        },
-        {
-          "name": "Eyestalk Ray",
-          "description": "Each ray can shoot once per round and target one creature or an object up to 1,000 pounds (up to four on same target). 1. Charm. DC 15 CHA or become ally for 1d4 rounds. 2. Hold. DC 15 STR or paralyzed 1d4 rounds. 3. Sleep. DC 15 WIS or asleep 1d4 rounds. 4. Polymorph. DC 15 INT or turned into vermin for 1d4 rounds. 5. Cancel. DC 15 DEX or all magical effects on target end. 6. Confusion. DC 15 WIS or attack a random ally within near. 7. Telekinesis. DC 15 STR or hover target up to double near. 8. Disintegrate. DC 15 DEX or 5d8 damage (object destroyed). 9. Petrify. DC 15 CON or petrified. 10. Death. DC 15 CON or drop to 0 HP with a death timer of 1."
+          "description": "Deals x2 damage against surprised creatures."
         }
       ],
       "stats": {
@@ -10101,6 +10111,50 @@
       "movement": "near (climb)",
       "alignment": "Chaotic",
       "level": 3
+    },
+    {
+      "name": "The Ten-Eyed Oracle",
+      "description": "A floating mass of rubbery skin crusted with barnacles. Its ten eyestalks writhe like snakes, and a deep, circular scar mars its central body, blinding what was once a large eye above a lipless maw. The Ten-Eyed Oracle stalks the Shadowdark, burbling mad prophesies and somehow moving freely between the lightless fathoms of the earth. The keepers of the deep lore suspect The Ten-Eyed Oracle was once a benevolent ally of mankind, but an unknown calamity drove it to insanity and reckless hatred. \"The moon runs red into the sea, and the whispers of the watchers in darkness proclaim: Your time has come!\" -The Ten-Eyed Oracle",
+      "actions": [
+        {
+          "name": "Legendary",
+          "description": "Only damaged by magical sources. Hostile spells targeting The Ten-Eyed Oracle are DC 18 to cast."
+        },
+        {
+          "name": "Eyestalk Ray",
+          "description": "Each ray can shoot once per round and target one creature or an object up to 1,000 pounds (up to four on same target). 1. Charm. DC 15 CHA or become ally for 1d4 rounds. 2. Hold. DC 15 STR or paralyzed 1d4 rounds. 3. Sleep. DC 15 WIS or asleep 1d4 rounds. 4. Polymorph. DC 15 INT or turned into vermin for 1d4 rounds. 5. Cancel. DC 15 DEX or all magical effects on target end. 6. Confusion. DC 15 WIS or attack a random ally within near. 7. Telekinesis. DC 15 STR or hover target up to double near. 8. Disintegrate. DC 15 DEX or 5d8 damage (object destroyed). 9. Petrify. DC 15 CON or petrified. 10. Death. DC 15 CON or drop to 0 HP with a death timer of 1."
+        }
+      ],
+      "stats": {
+        "str_mod": 4,
+        "STR": 6,
+        "dex_mod": 5,
+        "DEX": 14,
+        "con_mod": 4,
+        "CON": 12,
+        "int_mod": 5,
+        "INT": 6,
+        "wis_mod": 4,
+        "WIS": 10,
+        "cha_mod": 4,
+        "CHA": 6
+      },
+      "armorClass": 17,
+      "armor": "",
+      "maxHitPoints": 85,
+      "attackText": "2d4 eyestalk ray",
+      "attacks": [
+        {
+          "name": "Eyestalk Ray",
+          "qty": "2d4",
+          "range": "",
+          "damage": "",
+          "effect": ""
+        }
+      ],
+      "movement": "near (fly)",
+      "alignment": "Chaotic",
+      "level": 18
     },
     {
       "name": "The Tarrasque",
@@ -10175,7 +10229,7 @@
           "effect": "sever + swallow"
         }
       ],
-      "movement": "triple near (burrow",
+      "movement": "triple near (burrow, swim)",
       "alignment": "Neutral",
       "level": 30
     },
@@ -10319,7 +10373,7 @@
         "CHA": 8
       },
       "armorClass": 13,
-      "armor": "",
+      "armor": "leather + shield",
       "maxHitPoints": 4,
       "attackText": "1 shortsword +1 (1d6)",
       "attacks": [
@@ -11016,15 +11070,7 @@
         },
         {
           "name": "Life Drain",
-          "description": "1d4 CON damage."
-        },
-        {
-          "name": "Death if reduced to 0 CON",
-          "description": " WILL-O'-WISP"
-        },
-        {
-          "name": "Life Drain",
-          "description": "1d4 CON damage."
+          "description": "1d4 CON damage. Death if reduced to 0 CON."
         }
       ],
       "stats": {
@@ -11066,6 +11112,47 @@
       "movement": "near",
       "alignment": "Chaotic",
       "level": 3
+    },
+    {
+      "name": "Will-O'-Wisp",
+      "description": "A bobbing marsh light animated by an evil spirit. It tries to lead the living into danger.",
+      "actions": [
+        {
+          "name": "Life Drain",
+          "description": "1d4 CON damage. Death if reduced to 0 CON."
+        }
+      ],
+      "stats": {
+        "str_mod": -3,
+        "STR": 16,
+        "dex_mod": 3,
+        "DEX": 12,
+        "con_mod": 1,
+        "CON": 14,
+        "int_mod": -1,
+        "INT": 12,
+        "wis_mod": -1,
+        "WIS": 10,
+        "cha_mod": -2,
+        "CHA": 16
+      },
+      "armorClass": 13,
+      "armor": "",
+      "maxHitPoints": 10,
+      "attackText": "1 life drain +3",
+      "attacks": [
+        {
+          "name": "Life Drain",
+          "qty": 1,
+          "range": "",
+          "damage": "",
+          "mod": 3,
+          "effect": ""
+        }
+      ],
+      "movement": "near (fly)",
+      "alignment": "Chaotic",
+      "level": 2
     },
     {
       "name": "Wolf",
@@ -11159,7 +11246,7 @@
         },
         {
           "name": "Frost Breath",
-          "description": "Fills a near-sized cube extending from winter wolf. DC 15 DEX or 3d8 damage."
+          "description": "Fills a near-sized cube extending from winter wolf. DC 15 DEX or 3d8 damage. Cannot use again for 1d4 rounds."
         }
       ],
       "stats": {
@@ -11251,7 +11338,7 @@
         },
         {
           "name": "Life Drain",
-          "description": "1d4 CON damage."
+          "description": "1d4 CON damage. Death if reduced to 0 CON."
         }
       ],
       "stats": {
@@ -11345,7 +11432,7 @@
         },
         {
           "name": "Relentless",
-          "description": "If zombie reduced to 0 HP by a non-magical source, DC 15 CON to go to 1 HP instead"
+          "description": "If zombie reduced to 0 HP by a non-magical source, DC 15 CON to go to 1 HP instead."
         }
       ],
       "stats": {
@@ -11672,8 +11759,9 @@
       "tier": 2,
       "dc": 12,
       "classes": [
-        "wizard Duration: Focus"
+        "wizard"
       ],
+      "duration": "Focus",
       "range": "Near",
       "damage": "",
       "healing": ""

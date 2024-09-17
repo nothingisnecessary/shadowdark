@@ -149,9 +149,9 @@ Dwarves with bronze, metallic
 skin and flames in place of hair. 
 Gifted blacksmiths.
 AC 15, HP 15, ATK 2 flaming 
-warhammer +3 (1d10, ignites 
+warhammer +3 (1d10 + ignites 
 flammables) or 1 crossbow (far) 
-+0 (1d6), MV near, S +3, D +0, C
+(1d6), MV near, S +3, D +0, C
 +2, I +0, W +0, Ch +0, AL L, LV 3
 Impervious. Fire immune.
 BADGER
@@ -167,7 +167,7 @@ Hard-bitten rogue in tattered
 leathers and a hooded cloak.
 AC 13 (leather + shield), HP 4, 
 ATK 1 club +1 (1d4) or 1 shortbow 
-(far) +0 (1d4), MV near, S +1, D +0, 
+(far) (1d4), MV near, S +1, D +0, 
 C +0, I -1, W +0, Ch -1, AL C, LV 1
 Ambush. Deal an extra die of 
 damage when undetected.
@@ -303,7 +303,7 @@ then make 2 bite attacks.
 CAMEL
 Ornery, tan-furred desert beasts.
 AC 10, HP 12, ATK 1 hoof +3 (1d6) 
-or 1 spit (near) +0 (1d4), MV
+or 1 spit (near) (1d4), MV
 double near, S +3, D +0, C +3, I -2, 
 W +1, Ch -3, AL N, LV 2
 CAVE BRUTE
@@ -862,7 +862,7 @@ DRUID
 A wizard of the wilds holding 
 a knotted staff and wearing a 
 mossy cloak of deep viridian.
-AC 11, HP 31, ATK 1 staff +0 (1d4) 
+AC 11, HP 31, ATK 1 staff (1d4) 
 or 2 spell +5, MV near, S +0, D +1, 
 C +0, I +4, W +3, Ch +0, AL N, LV 7
 Barkskin (INT Spell). Self. DC 13. 
@@ -1275,7 +1275,7 @@ only. Turn invisible for 3 rounds.
 GOBLIN
 A short, hairless humanoid with 
 green skin and pointy ears.
-AC 11, HP 5, ATK 1 club +0 (1d4) or 
+AC 11, HP 5, ATK 1 club (1d4) or 
 1 shortbow (far) +1 (1d4), MV near, 
 S +0, D +1, C +1, I -1, W -1, Ch -2, AL
 C, LV 1
@@ -1293,7 +1293,7 @@ A swaying, chanting goblin
 wearing necklaces of teeth and 
 a robe of musty rat pelts. 
 AC 12 (leather), HP 19, ATK 1 staff 
-+0 (1d4) or 1 spell +3, MV near, S
+(1d4) or 1 spell +3, MV near, S
 +0, D +1, C +1, I +0, W +2, Ch +1, AL
 C, LV 4
 Keen Senses. Can't be surprised.
@@ -1511,7 +1511,7 @@ A sturdy, tall goblin with russet
 skin. Militant and strategic.
 AC 15 (chainmail + shield), HP
 10, ATK 1 longsword +3 (1d8) or 1 
-longbow (far) +0 (1d8), MV near, 
+longbow (far) (1d8), MV near, 
 S +3, D +0, C +1, I +2, W +1, Ch +1, 
 AL C, LV 2
 Phalanx. +1 to attacks and AC 
@@ -1577,7 +1577,7 @@ KOBOLD
 Puny, scaled coyote-lizards that 
 dwell underground.
 AC 13 (leather), HP 1, ATK 1 spear 
-(close/near) +0 (1d6), MV near, S
+(close/near) (1d6), MV near, S
 -2, D +2, C +0, I -1, W +0, Ch -1, AL
 C, LV 0
 Dodge. 1/day, an attack that 
@@ -1608,7 +1608,7 @@ the size of war galleons. They
 live in the lightless depths of the 
 deep ocean.
 AC 18, HP 80, ATK 4 tentacle 
-(near) +9 (2d12) or 1 storm or 1d4 
+(near) +9 (2d12) or 1 storm or 1d4
 lightning bolt, MV double near 
 (swim), 
 S +6, 
@@ -1645,7 +1645,7 @@ on turn to tear off.
 
 LEPRECHAUN
 Impish fey who favor green garb 
-and love fooling \"tall folk\" with 
+and love fooling "tall folk" with 
 promises of gold.
 AC 13, HP 19, ATK 1 spell +4, MV
 near, S +1, D +3, C +1, I +2, W +1, 
@@ -1659,8 +1659,8 @@ group of similar objects. Turn
 objects into silver or gold pieces. 
 Lasts 1 day.
 Illusion (CHA Spell). DC 11. 
-Create a convincing visual and/
-or auditory illusion within near. 
+Create a convincing visual and/or
+auditory illusion within near. 
 Lasts until dismissed. 
 Invisibility (CHA Spell). DC 12. 
 Self. Become invisible for 2d4 
@@ -1841,8 +1841,8 @@ Bind (INT Spell). DC 12. One humanoid in far paralyzed 1d4 rounds.
 Blast (INT Spell). DC 14. One creature in near takes 5d8 damage.
 Phase (INT Spell). DC 13. Self. Teleport up to one mile.
 True Name (INT Spell). DC 15. Near. Learn the True Name of target.
- \"Long have I held the weighty secrets of Gehemna,
- an age-old litany inscribed upon my weary soul.\" 
+ "Long have I held the weighty secrets of Gehemna,
+ an age-old litany inscribed upon my weary soul." 
  -Mordanticus the Flayed
 
 MUMMY
@@ -1942,7 +1942,7 @@ cycle or loses 2d8 HP per day that cannot heal until sleeping
 in sarcophagus. Takes 3d8 damage each round while in direct 
 sunlight. Cannot be killed unless pierced through heart while at 0 
 HP with a wooden stake carved from a tree from the Tal-Yool jungle.
-\"By this blade, the empire of Azarumme shall rise again!\" 
+"By this blade, the empire of Azarumme shall rise again!" 
  -Obe-Ixx of Azarumme
 
 OCHRE JELLY
@@ -2085,7 +2085,7 @@ MV near (climb), S +3, D +4, C +1, I
 -2, W +1, Ch -3, AL N, LV 3
 PEASANT
 A commoner in worn clothes.
-AC 10, HP 4, ATK 1 club +0 (1d4), 
+AC 10, HP 4, ATK 1 club (1d4), 
 MV near, S +0, D +0, C +0, I +0, W
 +0, Ch +0, AL L, LV 1
 PEGASUS
@@ -2192,7 +2192,7 @@ weapon spell kills the rakshasa.
 RAT
 Rangy, plague-carrying rodents 
 that infest underground places.
-AC 10, HP 1, ATK 1 bite +0 (1 + 
+AC 10, HP 1, ATK 1 bite (1 + 
 disease), MV near, S -3, D +0, C +1, 
 I -3, W +1, Ch -3, AL N, LV 0
 Disease. DC 9 CON or 1d4 CON 
@@ -2222,7 +2222,7 @@ on success. Die at 0 CON.
 RAT, SWARM
 A screeching tidal wave of 
 clawing and biting rats.
-AC 10, HP 28, ATK 4 bite +0 (1 + 
+AC 10, HP 28, ATK 4 bite (1 + 
 disease), MV near, S -3, D +0, C +1, 
 I -3, W +1, Ch -3, AL N, LV 6
 Disease. DC 9 CON or 1d4 CON 
@@ -2256,8 +2256,8 @@ advantage or disadvantage on all attack rolls and checks.
 Time Stop (WIS Spell). DC 15. Self. Time freezes for everyone except 
 Rathgamnon for 1d4 rounds. Everything that occurs during the time 
 freeze happens simultaneously when the spell ends.
- \"The stars told me of your arrival here many eons ago, 
- long before the first of your people walked the earth.\"
+ "The stars told me of your arrival here many eons ago, 
+ long before the first of your people walked the earth."
  -Rathgamnon
 
 REAVER
@@ -2460,7 +2460,7 @@ A bleach-boned skeleton with
 red pinpoints of light in its eyes.
 AC 13 (chainmail), HP 11, ATK 1 
 shortsword +1 (1d6) or 1 shortbow 
-(far) +0 (1d4), MV near, S +1, D +0, 
+(far) (1d4), MV near, S +1, D +0, 
 C +2, I -2, W +0, Ch -1, AL C, LV 2
 Undead. Immune to morale 
 checks.
@@ -2595,8 +2595,8 @@ prophesies and somehow moving freely between the lightless
 fathoms of the earth. The keepers of the deep lore suspect The 
 Ten-Eyed Oracle was once a benevolent ally of mankind, but an 
 unknown calamity drove it to insanity and reckless hatred.
-\"The moon runs red into the sea, and the whispers of 
-the watchers in darkness proclaim: Your time has come!\"
+"The moon runs red into the sea, and the whispers of 
+the watchers in darkness proclaim: Your time has come!"
  -The Ten-Eyed Oracle
 AC 17, HP 85, ATK 2d4 eyestalk ray, MV near (fly), S +4, D +5, C +4, I +5, 
 W +4, Ch +4, AL C, LV 18
@@ -2623,7 +2623,7 @@ hibernates deep in the earth or at the bottom of the sea for
 centuries, only awakening long enough to fill its vast belly in an 
 indiscriminate rampage of terror and destruction. There is only one 
 tarrasque, and it is the most dreaded creature to walk the earth.
-\"RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!\" 
+"RRRRRRAAAAAAAAAAAAAAAAGHHHHHH!" 
  -The Tarrasque
 AC 22, HP 140, ATK 4 thrash (near) +13 (3d10 + sever) and 1 bite (near) 
 +13 (5d10 + sever + swallow), MV triple near (burrow, swim), S +7, D +2, 
@@ -2653,8 +2653,8 @@ origins, though some theorize he is an immortal being or a god
 (they are not entirely incorrect). The Wandering Merchant always 
 has something useful, far-flung, or incredible to sell at a reasonable 
 price, and there's no telling when or where he'll show up next... 
-\"Fancy meeting you here, at the bottom of a pit trap! 
-I just so happen to have this lovely rope for sale...\" 
+"Fancy meeting you here, at the bottom of a pit trap! 
+I just so happen to have this lovely rope for sale..." 
  -The Wandering Merchant
 AC 16 (mithral chainmail), HP 71, ATK 4 +3 vorpal bastard sword +9 
 (1d10 + lop), MV near, S +3, D +3, C +4, I +3, W +4, Ch +5, AL L, LV 15
@@ -2679,7 +2679,7 @@ THIEF
 A cat burglar in a black cloak.
 AC 13 (leather), HP 13, ATK 1 
 dagger (close/near) +2 (1d4) or 1 
-shortsword +0 (1d6), MV near, S
+shortsword (1d6), MV near, S
 +0, D +2, C +0, I +0, W +0, Ch +1, 
 AL N, LV 3
 Stealthy. ADV on DEX checks to 
@@ -2805,7 +2805,7 @@ Child-sized, creeping fungi with
 neon purple caps. Their whiplike 
 roots decompose living flesh.
 AC 7, HP 9, ATK 2 tendril (near) 
-+0 (1d4), MV close, 
+(1d4), MV close, 
 S -3, 
 D -2, 
 C
@@ -2988,4 +2988,4 @@ Undead. Immune to morale
 checks.
 Relentless. If zombie reduced to 
 0 HP by a non-magical source, 
-DC 15 CON to go to 1 HP instead
+DC 15 CON to go to 1 HP instead.
