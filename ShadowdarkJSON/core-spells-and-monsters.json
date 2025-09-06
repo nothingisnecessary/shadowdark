@@ -5175,11 +5175,7 @@
         },
         {
           "name": "Bug Brain (WIS Spell)",
-          "description": "DC 13."
-        },
-        {
-          "name": "Near range, one target",
-          "description": "Target's INT drops to 1 for 1d4 rounds."
+          "description": "DC 13. Near range, one target. Target's INT drops to 1 for 1d4 rounds."
         },
         {
           "name": "Skitter (WIS Spell)",
@@ -5362,9 +5358,9 @@
         {
           "name": "Poison Breath",
           "qty": 1,
-          "range": "",
-          "damage": "",
-          "effect": ""
+          "range": "near",
+          "damage": "8d6",
+          "effect": "All within near, DC 15 CON or 8d6 damage."
         }
       ],
       "movement": "near",
